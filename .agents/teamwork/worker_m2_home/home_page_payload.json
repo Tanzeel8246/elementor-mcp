@@ -1,0 +1,2284 @@
+{
+  "post_id": 74,
+  "title": "CodeHubb | Premier Web Architecture, AI Solutions & UI/UX Design",
+  "status": "publish",
+  "post_type": "page",
+  "page_settings": {
+    "template": "elementor_header_footer",
+    "hide_title": "yes"
+  },
+  "structure": [
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#131313",
+        "padding": { "top": "100", "right": "24", "bottom": "80", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1200, "unit": "px" },
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "flex_wrap": "nowrap",
+            "flex_wrap_mobile": "wrap",
+            "flex_align_items": "center",
+            "flex_justify_content": "space-between",
+            "flex_gap": { "size": 48, "column": "48", "row": "48", "unit": "px" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "width": { "size": 58, "unit": "%" },
+                "width_mobile": { "size": 100, "unit": "%" },
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": { "size": 20, "column": "20", "row": "20", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "background_background": "classic",
+                    "background_color": "rgba(79, 70, 229, 0.15)",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(79, 70, 229, 0.3)",
+                    "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                    "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "CODEHUBB ENGINEERING LABS",
+                        "header_size": "div",
+                        "align": "left",
+                        "title_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": { "size": 1, "unit": "px" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Digital Architect & AI Engineering Specialist",
+                    "header_size": "h1",
+                    "align": "left",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 48, "unit": "px" },
+                    "typography_font_size_mobile": { "size": 32, "unit": "px" },
+                    "typography_font_weight": "700",
+                    "typography_line_height": { "size": 1.15, "unit": "em" }
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Crafting High-Performance Web Architectures, Scalable Full-Stack Systems, and AI Automations.",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#06B6D4",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 20, "unit": "px" },
+                    "typography_font_weight": "600",
+                    "typography_line_height": { "size": 1.4, "unit": "em" }
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<p>Empowering your business with high-performance WordPress websites and next-gen AI solutions. We blend creative architecture with autonomous automation to build digital experiences that not only look stunning but also rank high on Google and convert visitors into loyal enterprise clients.</p>",
+                    "align": "left",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "size": 16, "unit": "px" },
+                    "typography_line_height": { "size": 1.75, "unit": "em" }
+                  }
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_align_items": "center",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Hire Me",
+                        "link": { "url": "https://codehubb.com/contact/", "is_external": false },
+                        "size": "md",
+                        "background_color": "#4F46E5",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600",
+                        "selected_icon": { "value": "fas fa-arrow-right", "library": "fa-solid" },
+                        "icon_align": "right",
+                        "box_shadow_box_shadow_type": "yes",
+                        "box_shadow_box_shadow": { "horizontal": 0, "vertical": 8, "blur": 24, "spread": 0, "color": "rgba(79, 70, 229, 0.35)" }
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Explore Architecture",
+                        "link": { "url": "https://codehubb.com/services/", "is_external": false },
+                        "size": "md",
+                        "background_color": "rgba(255, 255, 255, 0.05)",
+                        "button_text_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.15)",
+                        "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600",
+                        "selected_icon": { "value": "fas fa-cube", "library": "fa-solid" },
+                        "icon_align": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_align_items": "center",
+                    "flex_gap": { "size": 10, "column": "10", "row": "10", "unit": "px" },
+                    "margin": { "top": "12", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "✓ 8+ Years Enterprise Architecture | 99.8% Uptime SLA Guaranteed",
+                        "header_size": "div",
+                        "align": "left",
+                        "title_color": "#10B981",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "500"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "width": { "size": 42, "unit": "%" },
+                "width_mobile": { "size": 100, "unit": "%" },
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_justify_content": "center"
+              },
+              "children": [
+                {
+                  "type": "widget",
+                  "widget_type": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://codehubb.com/wp-content/uploads/2026/01/Gemini_Generated_Image_sbqfzjsbqfzjsbqf-scaled-e1769443164537.webp",
+                      "id": 820,
+                      "alt": "Digital Architect & AI Engineering Specialist - CodeHubb Engineering Labs",
+                      "source": "library"
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.12)",
+                    "border_radius": { "top": "20", "right": "20", "bottom": "20", "left": "20", "unit": "px", "isLinked": true },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": { "horizontal": 0, "vertical": 20, "blur": 40, "spread": 0, "color": "rgba(0, 0, 0, 0.5)" }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#161F30",
+        "padding": { "top": "80", "right": "24", "bottom": "80", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1200, "unit": "px" },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": { "size": 40, "column": "40", "row": "40", "unit": "px" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "background_background": "classic",
+                    "background_color": "rgba(6, 182, 212, 0.15)",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(6, 182, 212, 0.3)",
+                    "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                    "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "PROVEN TRACK RECORD",
+                        "header_size": "div",
+                        "align": "center",
+                        "title_color": "#22D3EE",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": { "size": 1, "unit": "px" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Proven Enterprise Track Record",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 36, "unit": "px" },
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<p>Delivering high-reliability cloud architecture, resilient full-stack systems, and tailored AI pipelines for global clients.</p>",
+                    "align": "center",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "size": 16, "unit": "px" }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_direction_mobile": "column",
+                "flex_wrap": "nowrap",
+                "flex_wrap_mobile": "wrap",
+                "flex_align_items": "center",
+                "flex_justify_content": "space-between",
+                "flex_gap": { "size": 36, "column": "36", "row": "36", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 38, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "flex_direction": "column",
+                    "flex_align_items": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://codehubb.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-25-at-8.18.49-AM-1-scaled-e1769401082179.jpeg",
+                          "id": 755,
+                          "alt": "CodeHubb Principal Architect and Enterprise Engineering Lead",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.1)",
+                        "border_radius": { "top": "20", "right": "20", "bottom": "20", "left": "20", "unit": "px", "isLinked": true }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 62, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": { "size": 20, "column": "20", "row": "20", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "width": { "size": 47, "unit": "%" },
+                        "width_mobile": { "size": 100, "unit": "%" },
+                        "background_background": "classic",
+                        "background_color": "#1E293B",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.08)",
+                        "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                        "padding": { "top": "24", "right": "24", "bottom": "24", "left": "24", "unit": "px", "isLinked": true }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "99.8%",
+                            "header_size": "div",
+                            "align": "left",
+                            "title_color": "#10B981",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Uptime SLA Guarantee",
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 18, "unit": "px" },
+                            "typography_font_weight": "600"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p>Contractual infrastructure availability and automated failover pipelines.</p>",
+                            "align": "left",
+                            "text_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 14, "unit": "px" }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "width": { "size": 47, "unit": "%" },
+                        "width_mobile": { "size": 100, "unit": "%" },
+                        "background_background": "classic",
+                        "background_color": "#1E293B",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.08)",
+                        "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                        "padding": { "top": "24", "right": "24", "bottom": "24", "left": "24", "unit": "px", "isLinked": true }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "120+",
+                            "header_size": "div",
+                            "align": "left",
+                            "title_color": "#06B6D4",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Deployments Completed",
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 18, "unit": "px" },
+                            "typography_font_weight": "600"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p>High-concurrency web platforms, mobile apps, and enterprise portals.</p>",
+                            "align": "left",
+                            "text_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 14, "unit": "px" }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "width": { "size": 47, "unit": "%" },
+                        "width_mobile": { "size": 100, "unit": "%" },
+                        "background_background": "classic",
+                        "background_color": "#1E293B",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.08)",
+                        "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                        "padding": { "top": "24", "right": "24", "bottom": "24", "left": "24", "unit": "px", "isLinked": true }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "24/7",
+                            "header_size": "div",
+                            "align": "left",
+                            "title_color": "#4F46E5",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Continuous Monitoring",
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 18, "unit": "px" },
+                            "typography_font_weight": "600"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p>Real-time distributed telemetry and zero-latency incident remediation.</p>",
+                            "align": "left",
+                            "text_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 14, "unit": "px" }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "width": { "size": 47, "unit": "%" },
+                        "width_mobile": { "size": 100, "unit": "%" },
+                        "background_background": "classic",
+                        "background_color": "#1E293B",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.08)",
+                        "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                        "padding": { "top": "24", "right": "24", "bottom": "24", "left": "24", "unit": "px", "isLinked": true }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "8+",
+                            "header_size": "div",
+                            "align": "left",
+                            "title_color": "#F59E0B",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Years Architecture",
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 18, "unit": "px" },
+                            "typography_font_weight": "600"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p>Proven history of guiding tech startups and enterprise platforms.</p>",
+                            "align": "left",
+                            "text_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 14, "unit": "px" }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#131313",
+        "padding": { "top": "80", "right": "24", "bottom": "80", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1200, "unit": "px" },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": { "size": 40, "column": "40", "row": "40", "unit": "px" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "background_background": "classic",
+                    "background_color": "rgba(79, 70, 229, 0.15)",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(79, 70, 229, 0.3)",
+                    "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                    "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "SPECIALIZED SERVICES",
+                        "header_size": "div",
+                        "align": "center",
+                        "title_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": { "size": 1, "unit": "px" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Core Capabilities & Specialized Services",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 36, "unit": "px" },
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<p>Delivering end-to-end digital solutions tailored to elevate your brand, streamline business operations, and drive higher organic conversions.</p>",
+                    "align": "center",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "size": 16, "unit": "px" }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "size": 24, "column": "24", "row": "24", "unit": "px" },
+                "flex_justify_content": "center"
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "28", "bottom": "32", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "icon-box",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-laptop-code", "library": "fa-solid" },
+                        "primary_color": "#818CF8",
+                        "title_text": "Enterprise Web Platforms",
+                        "title_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "description_text": "Headless WordPress, Next.js SSR/SSG, and custom plugin architectures engineered for high-concurrency and sub-second load times.",
+                        "text_color": "#94A3B8",
+                        "view": "stacked",
+                        "shape": "circle"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color: #CBD5E1; font-size: 14px; line-height: 1.8;\">✔ Headless WP & Next.js 15 SSR/SSG<br/>✔ Core Web Vitals (95+ Google Score)<br/>✔ Custom Plugins & Resilient REST APIs</p>",
+                        "align": "left",
+                        "text_color": "#CBD5E1"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Explore Web Platforms →",
+                        "link": { "url": "https://codehubb.com/services/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "transparent",
+                        "button_text_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "28", "bottom": "32", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "icon-box",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-mobile-alt", "library": "fa-solid" },
+                        "primary_color": "#06B6D4",
+                        "title_text": "Full-Stack App Engineering",
+                        "title_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "description_text": "Cross-platform Flutter mobile applications and modern reactive backends delivering native performance across iOS, Android, and Web.",
+                        "text_color": "#94A3B8",
+                        "view": "stacked",
+                        "shape": "circle"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color: #CBD5E1; font-size: 14px; line-height: 1.8;\">✔ Cross-Platform Flutter Mobile Apps<br/>✔ Node.js, Python & Laravel Backends<br/>✔ Real-Time WebSockets & Reactive State</p>",
+                        "align": "left",
+                        "text_color": "#CBD5E1"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Explore App Engineering →",
+                        "link": { "url": "https://codehubb.com/services/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "transparent",
+                        "button_text_color": "#22D3EE",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "28", "bottom": "32", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "icon-box",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-brain", "library": "fa-solid" },
+                        "primary_color": "#10B981",
+                        "title_text": "AI Solutions & Automations",
+                        "title_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "description_text": "Custom autonomous AI agents, Model Context Protocol (MCP) servers, and LLM integrations that streamline operations and automate workflows.",
+                        "text_color": "#94A3B8",
+                        "view": "stacked",
+                        "shape": "circle"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color: #CBD5E1; font-size: 14px; line-height: 1.8;\">✔ Model Context Protocol (MCP) Systems<br/>✔ Autonomous Agent Orchestration<br/>✔ Custom LLM Fine-Tuning & Vector RAG</p>",
+                        "align": "left",
+                        "text_color": "#CBD5E1"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Explore AI Solutions →",
+                        "link": { "url": "https://codehubb.com/services/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "transparent",
+                        "button_text_color": "#34D399",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "28", "bottom": "32", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "icon-box",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-server", "library": "fa-solid" },
+                        "primary_color": "#F59E0B",
+                        "title_text": "Cloud Infrastructure & 99.8% SLA",
+                        "title_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "description_text": "Containerized Docker & Kubernetes deployments, automated CI/CD pipelines, and contractual 24/7 uptime maintenance with active telemetry.",
+                        "text_color": "#94A3B8",
+                        "view": "stacked",
+                        "shape": "circle"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"color: #CBD5E1; font-size: 14px; line-height: 1.8;\">✔ 99.8% Contractual Uptime SLA<br/>✔ Docker, Kubernetes & Multi-Cloud CI/CD<br/>✔ 24/7 Telemetry & DDoS Protection</p>",
+                        "align": "left",
+                        "text_color": "#CBD5E1"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Explore Cloud SLA →",
+                        "link": { "url": "https://codehubb.com/services/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "transparent",
+                        "button_text_color": "#FBBF24",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#161F30",
+        "padding": { "top": "80", "right": "24", "bottom": "80", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1200, "unit": "px" },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": { "size": 40, "column": "40", "row": "40", "unit": "px" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "background_background": "classic",
+                    "background_color": "rgba(79, 70, 229, 0.15)",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(79, 70, 229, 0.3)",
+                    "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                    "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "CASE STUDIES & EXPERIENCE",
+                        "header_size": "div",
+                        "align": "center",
+                        "title_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": { "size": 1, "unit": "px" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Featured Projects & Professional Experience",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 36, "unit": "px" },
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<p>Explore a curated selection of recent web platforms, high-converting digital storefronts, and tailored applications engineered for performance and impact.</p>",
+                    "align": "center",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "size": 16, "unit": "px" }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "size": 24, "column": "24", "row": "24", "unit": "px" },
+                "flex_justify_content": "center"
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "E-COMMERCE / NEXT.JS",
+                        "header_size": "div",
+                        "title_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 12, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Enterprise Headless Commerce Platform",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 20, "unit": "px" },
+                        "typography_font_weight": "700"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p>Architected a sub-second headless WordPress and Next.js 15 shopping experience with global CDN caching and Stripe payment processing.</p>",
+                        "text_color": "#94A3B8"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "View Case Study →",
+                        "link": { "url": "https://codehubb.com/projects/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "rgba(79, 70, 229, 0.2)",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "FINTECH / FLUTTER",
+                        "header_size": "div",
+                        "title_color": "#06B6D4",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 12, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Real-Time Mobile Financial Analytics",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 20, "unit": "px" },
+                        "typography_font_weight": "700"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p>Cross-platform Flutter application connected to reactive Node.js WebSockets for real-time asset tracking and portfolio management.</p>",
+                        "text_color": "#94A3B8"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "View Case Study →",
+                        "link": { "url": "https://codehubb.com/projects/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "rgba(6, 182, 212, 0.2)",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "AI / MCP PROTOCOL",
+                        "header_size": "div",
+                        "title_color": "#10B981",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 12, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Autonomous AI Multi-Agent Workflows",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 20, "unit": "px" },
+                        "typography_font_weight": "700"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p>Engineered an enterprise Model Context Protocol (MCP) server cluster enabling autonomous AI agents to manage CMS data with strict zero-defect guarantees.</p>",
+                        "text_color": "#94A3B8"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "View Case Study →",
+                        "link": { "url": "https://codehubb.com/projects/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "rgba(16, 185, 129, 0.2)",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 48, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "CLOUD / DEVOPS",
+                        "header_size": "div",
+                        "title_color": "#F59E0B",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 12, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Distributed High-Availability Architecture",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 20, "unit": "px" },
+                        "typography_font_weight": "700"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p>Automated multi-region Kubernetes deployment supporting 50k+ daily transactions with guaranteed 99.8% uptime SLA.</p>",
+                        "text_color": "#94A3B8"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "View Case Study →",
+                        "link": { "url": "https://codehubb.com/projects/", "is_external": false },
+                        "size": "sm",
+                        "background_color": "rgba(245, 158, 11, 0.2)",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "background_background": "classic",
+                "background_color": "#182234",
+                "border_border": "solid",
+                "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                "border_color": "rgba(255, 255, 255, 0.06)",
+                "border_radius": { "top": "20", "right": "20", "bottom": "20", "left": "20", "unit": "px", "isLinked": true },
+                "padding": { "top": "32", "right": "32", "bottom": "32", "left": "32", "unit": "px", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Leadership & Verified Career Trajectory",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 22, "unit": "px" },
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; color: #CBD5E1;\"><div><strong style=\"color: #FFF; font-size: 16px;\">Lead Web Architect & Founder</strong><div style=\"color: #818CF8; font-size: 13px;\">CodeHubb Solutions (2022 - Present)</div><div style=\"font-size: 13px; color: #94A3B8; margin-top: 4px;\">Directing enterprise cloud web architecture, client advisory, and engineering teams.</div></div><div><strong style=\"color: #FFF; font-size: 16px;\">Senior Full-Stack Developer</strong><div style=\"color: #06B6D4; font-size: 13px;\">Global Tech Partners (2020 - 2022)</div><div style=\"font-size: 13px; color: #94A3B8; margin-top: 4px;\">Distributed microservices, high-traffic APIs, and Flutter mobile architectures.</div></div><div><strong style=\"color: #FFF; font-size: 16px;\">UI/UX & Frontend Specialist</strong><div style=\"color: #10B981; font-size: 13px;\">Creative Tech Studio (2018 - 2020)</div><div style=\"font-size: 13px; color: #94A3B8; margin-top: 4px;\">Modern design systems, accessible interfaces, and headless CMS themes.</div></div><div><strong style=\"color: #FFF; font-size: 16px;\">Web Solutions Consultant</strong><div style=\"color: #F59E0B; font-size: 13px;\">Global Clients & Startups (2016 - 2018)</div><div style=\"font-size: 13px; color: #94A3B8; margin-top: 4px;\">End-to-end technical consulting, performance tuning, and technical SEO.</div></div></div>",
+                    "align": "left",
+                    "text_color": "#CBD5E1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#131313",
+        "padding": { "top": "80", "right": "24", "bottom": "80", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1200, "unit": "px" },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": { "size": 40, "column": "40", "row": "40", "unit": "px" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "background_background": "classic",
+                    "background_color": "rgba(16, 185, 129, 0.15)",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(16, 185, 129, 0.3)",
+                    "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                    "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "CLIENT ENDORSEMENTS",
+                        "header_size": "div",
+                        "align": "center",
+                        "title_color": "#34D399",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": { "size": 1, "unit": "px" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Client Endorsements & Peer Reviews",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 36, "unit": "px" },
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<p>Verifiable feedback from startup founders and enterprise product leaders who rely on CodeHubb architecture.</p>",
+                    "align": "center",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "size": 16, "unit": "px" }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "size": 24, "column": "24", "row": "24", "unit": "px" },
+                "flex_justify_content": "center"
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 31, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "24", "bottom": "32", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "★★★★★",
+                        "header_size": "div",
+                        "title_color": "#F59E0B",
+                        "typography_typography": "yes",
+                        "typography_font_size": { "size": 20, "unit": "px" }
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Exceptional Speed, Design & ROI",
+                        "header_size": "h3",
+                        "title_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 16, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-style: italic; color: #E2E8F0; line-height: 1.7;\">\"Tanzeel transformed our digital presence completely. The website is blisteringly fast, beautifully designed, and our client conversion rate doubled within weeks. An outstanding web architect!\"</p>",
+                        "text_color": "#E2E8F0"
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "margin": { "top": "12", "unit": "px" }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Sarah Jenkins",
+                            "header_size": "h4",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 16, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "CEO, Horizon Digital",
+                            "header_size": "div",
+                            "title_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 13, "unit": "px" }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 31, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "24", "bottom": "32", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "★★★★★",
+                        "header_size": "div",
+                        "title_color": "#F59E0B",
+                        "typography_typography": "yes",
+                        "typography_font_size": { "size": 20, "unit": "px" }
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Flawless Execution & High Reliability",
+                        "header_size": "h3",
+                        "title_color": "#06B6D4",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 16, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-style: italic; color: #E2E8F0; line-height: 1.7;\">\"CodeHubb delivered our custom platform ahead of schedule with zero defects. Their mastery of WordPress architecture, modern responsive design, and SEO is truly world-class.\"</p>",
+                        "text_color": "#E2E8F0"
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "margin": { "top": "12", "unit": "px" }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Marcus Vance",
+                            "header_size": "h4",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 16, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Product Lead, Nova Tech",
+                            "header_size": "div",
+                            "title_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 13, "unit": "px" }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 31, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "32", "right": "24", "bottom": "32", "left": "24", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": { "size": 16, "column": "16", "row": "16", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "★★★★★",
+                        "header_size": "div",
+                        "title_color": "#F59E0B",
+                        "typography_typography": "yes",
+                        "typography_font_size": { "size": 20, "unit": "px" }
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "Outstanding Technical & SEO Results",
+                        "header_size": "h3",
+                        "title_color": "#10B981",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 16, "unit": "px" },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "text-editor",
+                      "settings": {
+                        "editor": "<p style=\"font-style: italic; color: #E2E8F0; line-height: 1.7;\">\"From responsive UI/UX to complex automations, Tanzeel exceeded every expectation. Our organic Google ranking jumped significantly thanks to his SEO expertise.\"</p>",
+                        "text_color": "#E2E8F0"
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "margin": { "top": "12", "unit": "px" }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Elena Rostova",
+                            "header_size": "h4",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 16, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Founder, GrowthStudio",
+                            "header_size": "div",
+                            "title_color": "#94A3B8",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "size": 13, "unit": "px" }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#161F30",
+        "padding": { "top": "80", "right": "24", "bottom": "80", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1200, "unit": "px" },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": { "size": 40, "column": "40", "row": "40", "unit": "px" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "background_background": "classic",
+                    "background_color": "rgba(79, 70, 229, 0.15)",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(79, 70, 229, 0.3)",
+                    "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                    "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+                  },
+                  "children": [
+                    {
+                      "type": "widget",
+                      "widget_type": "heading",
+                      "settings": {
+                        "title": "TRANSPARENT PRICING",
+                        "header_size": "div",
+                        "align": "center",
+                        "title_color": "#818CF8",
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "size": 13, "unit": "px" },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": { "size": 1, "unit": "px" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "Transparent Pricing Architecture",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 36, "unit": "px" },
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "text-editor",
+                  "settings": {
+                    "editor": "<p>Transparent, value-driven packages designed to scale your business — from fast-loading landing pages to complete enterprise platforms.</p>",
+                    "align": "center",
+                    "text_color": "#94A3B8",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "size": 16, "unit": "px" }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "size": 24, "column": "24", "row": "24", "unit": "px" },
+                "flex_justify_content": "center",
+                "flex_align_items": "stretch"
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 31, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "36", "right": "28", "bottom": "36", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": { "size": 20, "column": "20", "row": "20", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Starter Architecture",
+                            "header_size": "h3",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 22, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color: #94A3B8; font-size: 14px;\">Ideal for startups and professionals seeking a high-converting digital presence.</p>",
+                            "text_color": "#94A3B8"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "$499 <span style=\"font-size: 14px; font-weight: 400; color: #94A3B8;\">/ project</span>",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "divider",
+                          "settings": {
+                            "color": "rgba(255, 255, 255, 0.08)"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<ul style=\"list-style: none; padding-left: 0; margin: 0; line-height: 2; color: #CBD5E1; font-size: 14px;\"><li>✔ Custom Web Architecture</li><li>✔ Modern Responsive Design</li><li>✔ On-Page SEO Optimization</li><li>✔ Performance & Speed Tuning</li><li>✔ Standard Dedicated Support</li></ul>",
+                            "text_color": "#CBD5E1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Get Started",
+                        "link": { "url": "https://codehubb.com/contact/", "is_external": false },
+                        "size": "md",
+                        "align": "center",
+                        "background_color": "rgba(79, 70, 229, 0.15)",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(79, 70, 229, 0.4)",
+                        "button_text_color": "#818CF8",
+                        "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 31, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "2", "right": "2", "bottom": "2", "left": "2", "unit": "px", "isLinked": true },
+                    "border_color": "#4F46E5",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "36", "right": "28", "bottom": "36", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": { "size": 20, "column": "20", "row": "20", "unit": "px" },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": { "horizontal": 0, "vertical": 12, "blur": 32, "spread": 0, "color": "rgba(79, 70, 229, 0.25)" }
+                  },
+                  "children": [
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                      },
+                      "children": [
+                        {
+                          "type": "container",
+                          "settings": {
+                            "content_width": "boxed",
+                            "background_background": "classic",
+                            "background_color": "#4F46E5",
+                            "border_radius": { "top": "20", "right": "20", "bottom": "20", "left": "20", "unit": "px", "isLinked": true },
+                            "padding": { "top": "4", "right": "12", "bottom": "4", "left": "12", "unit": "px", "isLinked": false },
+                            "margin": { "bottom": "4", "unit": "px" }
+                          },
+                          "children": [
+                            {
+                              "type": "widget",
+                              "widget_type": "heading",
+                              "settings": {
+                                "title": "MOST POPULAR",
+                                "header_size": "div",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "yes",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": { "size": 11, "unit": "px" },
+                                "typography_font_weight": "700",
+                                "typography_letter_spacing": { "size": 1, "unit": "px" }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Growth Scale",
+                            "header_size": "h3",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 22, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color: #94A3B8; font-size: 14px;\">Comprehensive solution for growing businesses scaling their online footprint.</p>",
+                            "text_color": "#94A3B8"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "$999 <span style=\"font-size: 14px; font-weight: 400; color: #94A3B8;\">/ project</span>",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "divider",
+                          "settings": {
+                            "color": "rgba(255, 255, 255, 0.08)"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<ul style=\"list-style: none; padding-left: 0; margin: 0; line-height: 2; color: #CBD5E1; font-size: 14px;\"><li>✔ Full-Stack Web Development</li><li>✔ Custom UI/UX Prototyping</li><li>✔ Advanced Technical SEO & Schema</li><li>✔ AI Integrations & Automations</li><li>✔ Priority 24/7 Dedicated Support</li></ul>",
+                            "text_color": "#CBD5E1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Get Started",
+                        "link": { "url": "https://codehubb.com/contact/", "is_external": false },
+                        "size": "md",
+                        "align": "center",
+                        "background_color": "#4F46E5",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600",
+                        "box_shadow_box_shadow_type": "yes",
+                        "box_shadow_box_shadow": { "horizontal": 0, "vertical": 6, "blur": 20, "spread": 0, "color": "rgba(79, 70, 229, 0.4)" }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "width": { "size": 31, "unit": "%" },
+                    "width_mobile": { "size": 100, "unit": "%" },
+                    "background_background": "classic",
+                    "background_color": "#1E293B",
+                    "border_border": "solid",
+                    "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                    "border_color": "rgba(255, 255, 255, 0.08)",
+                    "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+                    "padding": { "top": "36", "right": "28", "bottom": "36", "left": "28", "unit": "px", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": { "size": 20, "column": "20", "row": "20", "unit": "px" }
+                  },
+                  "children": [
+                    {
+                      "type": "container",
+                      "settings": {
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "flex_gap": { "size": 12, "column": "12", "row": "12", "unit": "px" }
+                      },
+                      "children": [
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Enterprise Sovereign",
+                            "header_size": "h3",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 22, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<p style=\"color: #94A3B8; font-size: 14px;\">Bespoke digital architecture for high-volume enterprises and global ventures.</p>",
+                            "text_color": "#94A3B8"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "heading",
+                          "settings": {
+                            "title": "Custom <span style=\"font-size: 14px; font-weight: 400; color: #94A3B8;\">/ tailored SLA</span>",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "yes",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": { "size": 36, "unit": "px" },
+                            "typography_font_weight": "700"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "divider",
+                          "settings": {
+                            "color": "rgba(255, 255, 255, 0.08)"
+                          }
+                        },
+                        {
+                          "type": "widget",
+                          "widget_type": "text-editor",
+                          "settings": {
+                            "editor": "<ul style=\"list-style: none; padding-left: 0; margin: 0; line-height: 2; color: #CBD5E1; font-size: 14px;\"><li>✔ Enterprise Platform Architecture</li><li>✔ Tailored AI Solutions & Microservices</li><li>✔ High-Concurrency & Security Auditing</li><li>✔ End-to-End API Integrations</li><li>✔ Dedicated VIP SLA & Maintenance</li></ul>",
+                            "text_color": "#CBD5E1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "widget",
+                      "widget_type": "button",
+                      "settings": {
+                        "text": "Contact Us",
+                        "link": { "url": "https://codehubb.com/contact/", "is_external": false },
+                        "size": "md",
+                        "align": "center",
+                        "background_color": "rgba(255, 255, 255, 0.05)",
+                        "border_border": "solid",
+                        "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                        "border_color": "rgba(255, 255, 255, 0.15)",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+                        "typography_typography": "yes",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#131313",
+        "padding": { "top": "80", "right": "24", "bottom": "100", "left": "24", "unit": "px", "isLinked": false },
+        "flex_direction": "column",
+        "flex_align_items": "center"
+      },
+      "children": [
+        {
+          "type": "container",
+          "settings": {
+            "content_width": "boxed",
+            "width": { "size": 1100, "unit": "px" },
+            "background_background": "gradient",
+            "background_color": "#1E1B4B",
+            "background_color_b": "#0F172A",
+            "background_gradient_type": "linear",
+            "background_gradient_angle": { "size": 135, "unit": "deg" },
+            "border_border": "solid",
+            "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+            "border_color": "rgba(79, 70, 229, 0.4)",
+            "border_radius": { "top": "24", "right": "24", "bottom": "24", "left": "24", "unit": "px", "isLinked": true },
+            "padding": { "top": "64", "right": "48", "bottom": "64", "left": "48", "unit": "px", "isLinked": false },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": { "size": 24, "column": "24", "row": "24", "unit": "px" },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": { "horizontal": 0, "vertical": 20, "blur": 50, "spread": 0, "color": "rgba(0, 0, 0, 0.4)" }
+          },
+          "children": [
+            {
+              "type": "container",
+              "settings": {
+                "content_width": "boxed",
+                "background_background": "classic",
+                "background_color": "rgba(79, 70, 229, 0.25)",
+                "border_border": "solid",
+                "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+                "border_color": "rgba(79, 70, 229, 0.5)",
+                "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+                "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false }
+              },
+              "children": [
+                {
+                  "type": "widget",
+                  "widget_type": "heading",
+                  "settings": {
+                    "title": "START YOUR ARCHITECTURE PROJECT",
+                    "header_size": "div",
+                    "align": "center",
+                    "title_color": "#A5B4FC",
+                    "typography_typography": "yes",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "size": 13, "unit": "px" },
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": { "size": 1, "unit": "px" }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "widget",
+              "widget_type": "heading",
+              "settings": {
+                "title": "Have a project in mind? Let's build something extraordinary together.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "yes",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "size": 36, "unit": "px" },
+                "typography_font_weight": "700",
+                "typography_line_height": { "size": 1.25, "unit": "em" }
+              }
+            },
+            {
+              "type": "widget",
+              "widget_type": "text-editor",
+              "settings": {
+                "editor": "<p style=\"font-size: 18px; color: #CBD5E1; max-width: 680px; margin: 0 auto; line-height: 1.7;\">Speak directly with our Principal Architects. We analyze your requirements and provide an actionable technical blueprint within 48 hours.</p>",
+                "align": "center",
+                "text_color": "#CBD5E1"
+              }
+            },
+            {
+              "type": "widget",
+              "widget_type": "button",
+              "settings": {
+                "text": "Start Your Project",
+                "link": { "url": "https://codehubb.com/contact/", "is_external": false },
+                "size": "lg",
+                "align": "center",
+                "background_color": "#4F46E5",
+                "button_text_color": "#FFFFFF",
+                "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+                "typography_typography": "yes",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_weight": "600",
+                "selected_icon": { "value": "fas fa-arrow-right", "library": "fa-solid" },
+                "icon_align": "right",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": { "horizontal": 0, "vertical": 8, "blur": 24, "spread": 0, "color": "rgba(79, 70, 229, 0.4)" }
+              }
+            }
+          ]
+        },
+        {
+          "type": "widget",
+          "widget_type": "button",
+          "settings": {
+            "text": "Chat with Architect",
+            "link": { "url": "https://wa.me/14158004242?text=Hello%20CodeHubb%20Architect,%20I'd%20like%20to%20discuss%20a%20project", "is_external": true },
+            "size": "sm",
+            "selected_icon": { "value": "fab fa-whatsapp", "library": "fa-brands" },
+            "icon_align": "left",
+            "background_color": "#10B981",
+            "button_text_color": "#FFFFFF",
+            "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": { "horizontal": 0, "vertical": 8, "blur": 24, "spread": 0, "color": "rgba(16, 185, 129, 0.45)" },
+            "_position": "fixed",
+            "_offset_orientation_h": "end",
+            "_offset_x": { "size": 28, "unit": "px" },
+            "_offset_orientation_v": "end",
+            "_offset_y": { "size": 28, "unit": "px" },
+            "_z_index": 9999
+          }
+        }
+      ]
+    }
+  ]
+}

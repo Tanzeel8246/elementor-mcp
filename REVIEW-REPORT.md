@@ -150,7 +150,7 @@ PHPCS could not be run in this environment. Manual review performed against WPCS
 #### Naming Conventions
 **Status:** ✅
 
-- Classes: `Elementor_MCP_Plugin`, `Elementor_MCP_Data`, etc. — correct `Upper_Snake_Case`
+- Classes: `Elementor_MCP_Plugin`, `MindCrafts_AI_Data`, etc. — correct `Upper_Snake_Case`
 - Functions: `elementor_mcp_init()`, `elementor_mcp_check_dependencies()` — correct `snake_case` with prefix
 - Constants: `ELEMENTOR_MCP_VERSION`, `ELEMENTOR_MCP_DIR` — correct `UPPER_SNAKE` with prefix
 - Options: `elementor_mcp_disabled_tools` — correctly prefixed
@@ -440,7 +440,7 @@ class Test_Element_Factory extends WP_UnitTestCase {
 
 ### 🟢 Low Priority (Nice to Have)
 
-10. **Extract `reassign_ids()` and `count_elements()`** — Duplicated across `class-page-abilities.php`, `class-layout-abilities.php`, and `class-template-abilities.php`. Could be a shared utility method on `Elementor_MCP_Data` or a trait.
+10. **Extract `reassign_ids()` and `count_elements()`** — Duplicated across `class-page-abilities.php`, `class-layout-abilities.php`, and `class-template-abilities.php`. Could be a shared utility method on `MindCrafts_AI_Data` or a trait.
 11. **Add `phpunit.xml.dist`** — Even before writing tests, configure the test runner for future use
 12. **Consider rate limiting** — The `build-page` composite tool could potentially create many posts; consider adding a guard
 

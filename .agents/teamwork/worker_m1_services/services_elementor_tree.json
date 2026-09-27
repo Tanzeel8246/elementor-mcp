@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "c1a0101",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "container_type": "flex",
+      "content_width": "full",
+      "background_background": "classic",
+      "background_color": "#131313",
+      "padding": { "top": "100", "right": "24", "bottom": "60", "left": "24", "unit": "px", "isLinked": false },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "flex_justify_content": "center"
+    },
+    "elements": [
+      {
+        "id": "b1a0102",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "boxed",
+          "background_background": "classic",
+          "background_color": "rgba(79, 70, 229, 0.15)",
+          "border_border": "solid",
+          "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+          "border_color": "rgba(79, 70, 229, 0.3)",
+          "border_radius": { "top": "30", "right": "30", "bottom": "30", "left": "30", "unit": "px", "isLinked": true },
+          "padding": { "top": "6", "right": "16", "bottom": "6", "left": "16", "unit": "px", "isLinked": false },
+          "margin": { "bottom": "24", "unit": "px" }
+        },
+        "elements": [
+          {
+            "id": "w1a0103",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "ENTERPRISE CAPABILITIES",
+              "header_size": "div",
+              "align": "center",
+              "title_color": "#818CF8",
+              "typography_typography": "yes",
+              "typography_font_family": "Plus Jakarta Sans",
+              "typography_font_size": { "size": 13, "unit": "px" },
+              "typography_font_weight": "600",
+              "typography_text_transform": "uppercase",
+              "typography_letter_spacing": { "size": 1, "unit": "px" }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "w1a0104",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Scalable Web Architecture & AI-Driven Engineering",
+          "header_size": "h1",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "yes",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_size": { "size": 54, "unit": "px" },
+          "typography_font_size_mobile": { "size": "32", "unit": "px" },
+          "typography_font_weight": "700",
+          "typography_line_height": { "size": 1.15, "unit": "em" }
+        },
+        "elements": []
+      },
+      {
+        "id": "w1a0105",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center; max-width: 800px; margin: 0 auto 36px; font-size: 18px; line-height: 1.8; color: #94A3B8;\">We build fault-tolerant web applications, distributed full-stack systems, and custom autonomous AI workflows designed to handle high transaction volumes and accelerate growth.</p>",
+          "align": "center",
+          "text_color": "#94A3B8"
+        },
+        "elements": []
+      },
+      {
+        "id": "c1a0106",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "boxed",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_justify_content": "center",
+          "flex_align_items": "center",
+          "flex_gap": { "size": 16, "unit": "px" },
+          "flex_wrap": "wrap"
+        },
+        "elements": [
+          {
+            "id": "w1a0107",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Start Architecture Review",
+              "link": { "url": "/contact/", "is_external": false },
+              "size": "md",
+              "background_color": "#4F46E5",
+              "button_text_color": "#FFFFFF",
+              "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true }
+            },
+            "elements": []
+          },
+          {
+            "id": "w1a0108",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Explore Workflow",
+              "link": { "url": "#workflow", "is_external": false },
+              "size": "md",
+              "background_color": "rgba(255, 255, 255, 0.05)",
+              "button_text_color": "#F8FAFC",
+              "border_border": "solid",
+              "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "border_color": "rgba(255, 255, 255, 0.15)",
+              "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2a0201",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "container_type": "flex",
+      "content_width": "boxed",
+      "width": { "size": 1200, "unit": "px" },
+      "margin": { "top": "40", "right": "auto", "bottom": "80", "left": "auto", "unit": "px", "isLinked": false },
+      "padding": { "top": "0", "right": "24", "bottom": "0", "left": "24", "unit": "px", "isLinked": false },
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_gap": { "size": 30, "unit": "px" }
+    },
+    "elements": [
+      {
+        "id": "c2a0202",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "full",
+          "width": { "size": 48, "unit": "%" },
+          "background_background": "classic",
+          "background_color": "#1E293B",
+          "border_border": "solid",
+          "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+          "border_color": "rgba(255, 255, 255, 0.08)",
+          "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+          "padding": { "top": "32", "right": "32", "bottom": "32", "left": "32", "unit": "px", "isLinked": true },
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "w2a0203",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "⚡",
+              "header_size": "div",
+              "title_color": "#818CF8",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 28, "unit": "px" }
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0204",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Enterprise Web Platforms",
+              "header_size": "h3",
+              "title_color": "#FFFFFF",
+              "typography_typography": "yes",
+              "typography_font_family": "Plus Jakarta Sans",
+              "typography_font_size": { "size": 20, "unit": "px" },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0205",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 20px;\">Decoupled Headless WordPress, Next.js rendering engines, and multi-tenant platforms delivering sub-second load times and rock-solid Core Web Vitals.</p><ul style=\"list-style: none; padding: 0; margin: 0 0 24px 0; font-size: 14px; color: #CBD5E1; line-height: 2;\"><li>✔ Headless WP &amp; Next.js SSR/SSG</li><li>✔ Global Edge Caching &amp; CDNs</li><li>✔ 100/100 Google Lighthouse Standards</li></ul>",
+              "text_color": "#94A3B8"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0206",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Start Review",
+              "link": { "url": "/contact/", "is_external": false },
+              "size": "sm",
+              "background_color": "#4F46E5",
+              "button_text_color": "#FFFFFF",
+              "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "c2a0207",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "full",
+          "width": { "size": 48, "unit": "%" },
+          "background_background": "classic",
+          "background_color": "#1E293B",
+          "border_border": "solid",
+          "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+          "border_color": "rgba(255, 255, 255, 0.08)",
+          "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+          "padding": { "top": "32", "right": "32", "bottom": "32", "left": "32", "unit": "px", "isLinked": true },
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "w2a0208",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "📱",
+              "header_size": "div",
+              "title_color": "#22D3EE",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 28, "unit": "px" }
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0209",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Full-Stack App Engineering",
+              "header_size": "h3",
+              "title_color": "#FFFFFF",
+              "typography_typography": "yes",
+              "typography_font_family": "Plus Jakarta Sans",
+              "typography_font_size": { "size": 20, "unit": "px" },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0210",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 20px;\">Enterprise Laravel backends, Node.js microservices, and cross-platform Flutter applications built with reactive state management and offline-first persistence.</p><ul style=\"list-style: none; padding: 0; margin: 0 0 24px 0; font-size: 14px; color: #CBD5E1; line-height: 2;\"><li>✔ Cross-Platform Flutter Mobile Apps</li><li>✔ High-Throughput REST &amp; GraphQL APIs</li><li>✔ Secure RBAC &amp; Enterprise Auth</li></ul>",
+              "text_color": "#94A3B8"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0211",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Start Review",
+              "link": { "url": "/contact/", "is_external": false },
+              "size": "sm",
+              "background_color": "#06B6D4",
+              "button_text_color": "#FFFFFF",
+              "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "c2a0212",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "full",
+          "width": { "size": 48, "unit": "%" },
+          "background_background": "classic",
+          "background_color": "#1E293B",
+          "border_border": "solid",
+          "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+          "border_color": "rgba(255, 255, 255, 0.08)",
+          "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+          "padding": { "top": "32", "right": "32", "bottom": "32", "left": "32", "unit": "px", "isLinked": true },
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "w2a0213",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "🤖",
+              "header_size": "div",
+              "title_color": "#34D399",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 28, "unit": "px" }
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0214",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "AI Solutions & Automations",
+              "header_size": "h3",
+              "title_color": "#FFFFFF",
+              "typography_typography": "yes",
+              "typography_font_family": "Plus Jakarta Sans",
+              "typography_font_size": { "size": 20, "unit": "px" },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0215",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 20px;\">Custom Autonomous Agents, Model Context Protocol (MCP) integrations, vector retrieval pipelines, and enterprise automationbots that transform operations.</p><ul style=\"list-style: none; padding: 0; margin: 0 0 24px 0; font-size: 14px; color: #CBD5E1; line-height: 2;\"><li>✔ Model Context Protocol (MCP) Systems</li><li>✔ Autonomous Multi-Agent Workflows</li><li>✔ Enterprise Document &amp; RAG Intelligence</li></ul>",
+              "text_color": "#94A3B8"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0216",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Start Review",
+              "link": { "url": "/contact/", "is_external": false },
+              "size": "sm",
+              "background_color": "#10B981",
+              "button_text_color": "#FFFFFF",
+              "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "c2a0217",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "full",
+          "width": { "size": 48, "unit": "%" },
+          "background_background": "classic",
+          "background_color": "#1E293B",
+          "border_border": "solid",
+          "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+          "border_color": "rgba(255, 255, 255, 0.08)",
+          "border_radius": { "top": "16", "right": "16", "bottom": "16", "left": "16", "unit": "px", "isLinked": true },
+          "padding": { "top": "32", "right": "32", "bottom": "32", "left": "32", "unit": "px", "isLinked": true },
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "w2a0218",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "🛡",
+              "header_size": "div",
+              "title_color": "#FBBF24",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 28, "unit": "px" }
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0219",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cloud SLA & Performance Audits",
+              "header_size": "h3",
+              "title_color": "#FFFFFF",
+              "typography_typography": "yes",
+              "typography_font_family": "Plus Jakarta Sans",
+              "typography_font_size": { "size": 20, "unit": "px" },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0220",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 20px;\">Zero-downtime migrations, automated failover pipelines, containerized deployments, and rigorous security audits backed by a contractual 99.8% SLA.</p><ul style=\"list-style: none; padding: 0; margin: 0 0 24px 0; font-size: 14px; color: #CBD5E1; line-height: 2;\"><li>✔ 99.8% Contractual Uptime SLA</li><li>✔ Docker, Kubernetes &amp; Redis Clustering</li><li>✔ Proactive 24/7 Sentinel Monitoring</li></ul>",
+              "text_color": "#94A3B8"
+            },
+            "elements": []
+          },
+          {
+            "id": "w2a0221",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Start Review",
+              "link": { "url": "/contact/", "is_external": false },
+              "size": "sm",
+              "background_color": "#F59E0B",
+              "button_text_color": "#FFFFFF",
+              "border_radius": { "top": "6", "right": "6", "bottom": "6", "left": "6", "unit": "px", "isLinked": true }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c3a0301",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "container_type": "flex",
+      "content_width": "boxed",
+      "width": { "size": 1200, "unit": "px" },
+      "margin": { "top": "0", "right": "auto", "bottom": "80", "left": "auto", "unit": "px", "isLinked": false },
+      "padding": { "top": "40", "right": "24", "bottom": "40", "left": "24", "unit": "px", "isLinked": false },
+      "background_background": "classic",
+      "background_color": "#161F30",
+      "border_border": "solid",
+      "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+      "border_color": "rgba(255, 255, 255, 0.05)",
+      "border_radius": { "top": "20", "right": "20", "bottom": "20", "left": "20", "unit": "px", "isLinked": true },
+      "flex_direction": "column",
+      "flex_align_items": "center"
+    },
+    "elements": [
+      {
+        "id": "w3a0302",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Battle-Tested Enterprise Tech Stack",
+          "header_size": "h3",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "yes",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_size": { "size": 22, "unit": "px" },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "w3a0303",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center; color: #94A3B8; font-size: 15px; margin-bottom: 30px;\">Every layer engineered with modern, enterprise-proven frameworks and protocols.</p>",
+          "align": "center",
+          "text_color": "#94A3B8"
+        },
+        "elements": []
+      },
+      {
+        "id": "c3a0304",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "boxed",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_justify_content": "center",
+          "flex_gap": { "size": 12, "unit": "px" }
+        },
+        "elements": [
+          {
+            "id": "w3a0305",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Next.js 15",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0306",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Flutter 3.x",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0307",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Laravel 11",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0308",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Node.js & TypeScript",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0309",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Python & FastAPI",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0310",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Docker & Kubernetes",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0311",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "PostgreSQL & Redis",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0312",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "MCP / AI Agents",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0313",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cloudflare Edge",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          },
+          {
+            "id": "w3a0314",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "TailwindCSS",
+              "header_size": "span",
+              "title_color": "#F8FAFC",
+              "typography_typography": "yes",
+              "typography_font_size": { "size": 14, "unit": "px" },
+              "typography_font_weight": "500",
+              "_background_background": "classic",
+              "_background_color": "#1E293B",
+              "_border_border": "solid",
+              "_border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "_border_color": "rgba(255, 255, 255, 0.1)",
+              "_border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true },
+              "_padding": { "top": "8", "right": "18", "bottom": "8", "left": "18", "unit": "px", "isLinked": false }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4a0401",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "container_type": "flex",
+      "content_width": "boxed",
+      "width": { "size": 1200, "unit": "px" },
+      "_element_id": "workflow",
+      "margin": { "top": "0", "right": "auto", "bottom": "80", "left": "auto", "unit": "px", "isLinked": false },
+      "padding": { "top": "0", "right": "24", "bottom": "0", "left": "24", "unit": "px", "isLinked": false },
+      "flex_direction": "column"
+    },
+    "elements": [
+      {
+        "id": "w4a0402",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Zero-Defect Architectural Process",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "yes",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_size": { "size": 32, "unit": "px" },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "w4a0403",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center; color: #94A3B8; font-size: 16px; margin-bottom: 50px;\">How we guarantee seamless execution and zero regressions from Day 1.</p>",
+          "align": "center",
+          "text_color": "#94A3B8"
+        },
+        "elements": []
+      },
+      {
+        "id": "c4a0404",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "container_type": "flex",
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_wrap": "wrap",
+          "flex_justify_content": "space-between",
+          "flex_gap": { "size": 24, "unit": "px" }
+        },
+        "elements": [
+          {
+            "id": "c4a0405",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "container_type": "flex",
+              "content_width": "full",
+              "width": { "size": 23, "unit": "%" },
+              "background_background": "classic",
+              "background_color": "#182234",
+              "border_border": "solid",
+              "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "border_color": "rgba(255, 255, 255, 0.06)",
+              "border_radius": { "top": "12", "right": "12", "bottom": "12", "left": "12", "unit": "px", "isLinked": true },
+              "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": false },
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "w4a0406",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "01",
+                  "header_size": "span",
+                  "title_color": "#4F46E5",
+                  "typography_typography": "yes",
+                  "typography_font_size": { "size": 28, "unit": "px" },
+                  "typography_font_weight": "800",
+                  "margin": { "bottom": "12", "unit": "px" }
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0407",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Architecture Discovery",
+                  "header_size": "h4",
+                  "title_color": "#FFFFFF",
+                  "typography_typography": "yes",
+                  "typography_font_family": "Plus Jakarta Sans",
+                  "typography_font_size": { "size": 18, "unit": "px" },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0408",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"font-size: 14px; line-height: 1.7; color: #94A3B8;\">We audit existing legacy constraints, map database relations, and define API blast radii before writing a single line of code.</p>",
+                  "text_color": "#94A3B8"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "c4a0409",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "container_type": "flex",
+              "content_width": "full",
+              "width": { "size": 23, "unit": "%" },
+              "background_background": "classic",
+              "background_color": "#182234",
+              "border_border": "solid",
+              "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "border_color": "rgba(255, 255, 255, 0.06)",
+              "border_radius": { "top": "12", "right": "12", "bottom": "12", "left": "12", "unit": "px", "isLinked": true },
+              "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": false },
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "w4a0410",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "02",
+                  "header_size": "span",
+                  "title_color": "#06B6D4",
+                  "typography_typography": "yes",
+                  "typography_font_size": { "size": 28, "unit": "px" },
+                  "typography_font_weight": "800",
+                  "margin": { "bottom": "12", "unit": "px" }
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0411",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Iterative Engineering",
+                  "header_size": "h4",
+                  "title_color": "#FFFFFF",
+                  "typography_typography": "yes",
+                  "typography_font_family": "Plus Jakarta Sans",
+                  "typography_font_size": { "size": 18, "unit": "px" },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0412",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"font-size: 14px; line-height: 1.7; color: #94A3B8;\">Full technical documentation, component state hierarchies, and declarative microservice contracts aligned to enterprise standards.</p>",
+                  "text_color": "#94A3B8"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "c4a0413",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "container_type": "flex",
+              "content_width": "full",
+              "width": { "size": 23, "unit": "%" },
+              "background_background": "classic",
+              "background_color": "#182234",
+              "border_border": "solid",
+              "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "border_color": "rgba(255, 255, 255, 0.06)",
+              "border_radius": { "top": "12", "right": "12", "bottom": "12", "left": "12", "unit": "px", "isLinked": true },
+              "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": false },
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "w4a0414",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "03",
+                  "header_size": "span",
+                  "title_color": "#10B981",
+                  "typography_typography": "yes",
+                  "typography_font_size": { "size": 28, "unit": "px" },
+                  "typography_font_weight": "800",
+                  "margin": { "bottom": "12", "unit": "px" }
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0415",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Adversarial QA & Audits",
+                  "header_size": "h4",
+                  "title_color": "#FFFFFF",
+                  "typography_typography": "yes",
+                  "typography_font_family": "Plus Jakarta Sans",
+                  "typography_font_size": { "size": 18, "unit": "px" },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0416",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"font-size: 14px; line-height: 1.7; color: #94A3B8;\">Full-stack development with mandatory automated linting, unit testing, and verification receipts for every feature branch.</p>",
+                  "text_color": "#94A3B8"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "c4a0417",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "container_type": "flex",
+              "content_width": "full",
+              "width": { "size": 23, "unit": "%" },
+              "background_background": "classic",
+              "background_color": "#182234",
+              "border_border": "solid",
+              "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+              "border_color": "rgba(255, 255, 255, 0.06)",
+              "border_radius": { "top": "12", "right": "12", "bottom": "12", "left": "12", "unit": "px", "isLinked": true },
+              "padding": { "top": "28", "right": "24", "bottom": "28", "left": "24", "unit": "px", "isLinked": false },
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "w4a0418",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "04",
+                  "header_size": "span",
+                  "title_color": "#F59E0B",
+                  "typography_typography": "yes",
+                  "typography_font_size": { "size": 28, "unit": "px" },
+                  "typography_font_weight": "800",
+                  "margin": { "bottom": "12", "unit": "px" }
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0419",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Zero-Downtime Deployment",
+                  "header_size": "h4",
+                  "title_color": "#FFFFFF",
+                  "typography_typography": "yes",
+                  "typography_font_family": "Plus Jakarta Sans",
+                  "typography_font_size": { "size": 18, "unit": "px" },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "w4a0420",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"font-size: 14px; line-height: 1.7; color: #94A3B8;\">Zero-downtime blue/green rollouts, real-time APM telemetry, and contractual 99.8% uptime maintenance contracts.</p>",
+                  "text_color": "#94A3B8"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c5a0501",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "container_type": "flex",
+      "content_width": "boxed",
+      "width": { "size": 900, "unit": "px" },
+      "margin": { "top": "0", "right": "auto", "bottom": "80", "left": "auto", "unit": "px", "isLinked": false },
+      "padding": { "top": "0", "right": "24", "bottom": "0", "left": "24", "unit": "px", "isLinked": false },
+      "flex_direction": "column"
+    },
+    "elements": [
+      {
+        "id": "w5a0502",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Frequently Asked Questions",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "yes",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_size": { "size": 30, "unit": "px" },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "w5a0503",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center; color: #94A3B8; font-size: 15px; margin-bottom: 40px;\">Clear answers regarding enterprise engagements, delivery times, and SLAs.</p>",
+          "align": "center",
+          "text_color": "#94A3B8"
+        },
+        "elements": []
+      },
+      {
+        "id": "w5a0504",
+        "elType": "widget",
+        "widgetType": "accordion",
+        "settings": {
+          "tabs": [
+            {
+              "tab_title": "What is your standard turnaround timeline for an enterprise architecture project?",
+              "tab_content": "Standard full-stack web and mobile architectures are completed within 2 to 4 weeks depending on scope complexity. Every project begins with a structured 3-day sprint plan and deliverables are provided incrementally."
+            },
+            {
+              "tab_title": "Do you provide complete code ownership and documentation after handoff?",
+              "tab_content": "Yes. 100% of the repository, deployment scripts, Docker files, and API documentation belong to your organization upon project completion. We also conduct technical handover sessions for your internal engineering team."
+            },
+            {
+              "tab_title": "How do you enforce and guarantee your 99.8% Uptime SLA?",
+              "tab_content": "Our architectures utilize redundant cloud regions, automatic container auto-scaling, distributed Redis caching, and real-time uptime monitors with SMS/pager escalation. In the rare event of downtime, contractual SLA credits apply."
+            }
+          ],
+          "title_html_tag": "div",
+          "faq_schema": "yes",
+          "title_color": "#FFFFFF",
+          "title_background": "#1E293B",
+          "content_color": "#94A3B8",
+          "content_background_color": "#1E293B",
+          "border_border": "solid",
+          "border_color": "rgba(255, 255, 255, 0.08)",
+          "border_width": { "size": 1, "unit": "px" }
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "c6a0601",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "container_type": "flex",
+      "content_width": "boxed",
+      "width": { "size": 1100, "unit": "px" },
+      "margin": { "top": "0", "right": "auto", "bottom": "0", "left": "auto", "unit": "px", "isLinked": false },
+      "padding": { "top": "60", "right": "40", "bottom": "60", "left": "40", "unit": "px", "isLinked": false },
+      "background_background": "gradient",
+      "background_color": "#1E1B4B",
+      "background_color_b": "#0F172A",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": { "size": 135, "unit": "deg" },
+      "border_border": "solid",
+      "border_width": { "top": "1", "right": "1", "bottom": "1", "left": "1", "unit": "px", "isLinked": true },
+      "border_color": "rgba(79, 70, 229, 0.4)",
+      "border_radius": { "top": "24", "right": "24", "bottom": "24", "left": "24", "unit": "px", "isLinked": true },
+      "flex_direction": "column",
+      "flex_align_items": "center"
+    },
+    "elements": [
+      {
+        "id": "w6a0602",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Ready to Elevate Your Digital Architecture?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "yes",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_size": { "size": 32, "unit": "px" },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "w6a0603",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center; font-size: 16px; color: #CBD5E1; max-width: 600px; margin: 0 auto 30px;\">Speak directly with our Principal Architects and receive a detailed system blueprint within 48 hours.</p>",
+          "align": "center",
+          "text_color": "#CBD5E1"
+        },
+        "elements": []
+      },
+      {
+        "id": "w6a0604",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+          "text": "Book Discovery Session",
+          "link": { "url": "/contact/", "is_external": false },
+          "size": "md",
+          "background_color": "#4F46E5",
+          "button_text_color": "#FFFFFF",
+          "border_radius": { "top": "8", "right": "8", "bottom": "8", "left": "8", "unit": "px", "isLinked": true }
+        },
+        "elements": []
+      }
+    ]
+  }
+]

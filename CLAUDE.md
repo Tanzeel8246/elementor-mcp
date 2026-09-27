@@ -26,13 +26,13 @@ For plugin review tooling, the `.claude/skills/wp-plugin-review/scripts/setup_to
 
 ### MCP Server Registration
 
-The plugin registers a dedicated MCP server `elementor-mcp-server` at `/wp-json/mcp/elementor-mcp-server`. All abilities use the `elementor-mcp/` namespace.
+The plugin registers a dedicated MCP server `mindcrafts-ai-server` at `/wp-json/mcp/mindcrafts-ai-server`. All abilities use the `mindcrafts-ai/` namespace.
 
 ### Directory Structure
 
 ```
-elementor-mcp/
-├── elementor-mcp.php                          # Bootstrap: plugin header, constants, dependency checks, require_once, singleton init
+mindcrafts-ai/
+├── mindcrafts-ai.php                          # Bootstrap: plugin header, constants, dependency checks, require_once, singleton init
 ├── includes/
 │   ├── class-plugin.php                       # Singleton orchestrator — hooks into wp_abilities_api_categories_init, wp_abilities_api_init, mcp_adapter_init
 │   ├── class-elementor-data.php               # Data access layer wrapping Elementor documents, widgets, element tree
@@ -61,11 +61,11 @@ elementor-mcp/
 ### Hook Registration Flow
 
 The plugin integrates via three WordPress hooks (in execution order):
-1. **`wp_abilities_api_categories_init`** → Registers the `elementor-mcp` ability category
+1. **`wp_abilities_api_categories_init`** → Registers the `mindcrafts-ai` ability category
 2. **`wp_abilities_api_init`** → Registers all abilities via `wp_register_ability()` (ability names must match `[a-z0-9-]+/[a-z0-9-]+`)
 3. **`mcp_adapter_init`** → Creates MCP server via `$mcp_adapter->create_server()`, passing ability names as the tools array
 
-The MCP Adapter converts ability names like `elementor-mcp/list-widgets` to tool names `elementor-mcp-list-widgets` (replacing `/` with `-`).
+The MCP Adapter converts ability names like `mindcrafts-ai/list-widgets` to tool names `mindcrafts-ai-list-widgets` (replacing `/` with `-`).
 
 ### Core Layers
 
@@ -112,82 +112,82 @@ The MCP Adapter converts ability names like `elementor-mcp/list-widgets` to tool
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/list-widgets` | All registered widget types with names, titles, icons, categories, keywords |
-| `elementor-mcp/get-widget-schema` | Full JSON Schema for a widget's settings (auto-generated from Elementor controls) |
-| `elementor-mcp/get-page-structure` | Element tree for a page (containers, widgets, nesting) |
-| `elementor-mcp/get-element-settings` | Current settings for a specific element on a page |
-| `elementor-mcp/list-pages` | All Elementor-enabled pages/posts |
-| `elementor-mcp/list-templates` | Saved Elementor templates from the template library |
-| `elementor-mcp/get-global-settings` | Active kit/global settings (colors, typography, spacing) |
+| `mindcrafts-ai/list-widgets` | All registered widget types with names, titles, icons, categories, keywords |
+| `mindcrafts-ai/get-widget-schema` | Full JSON Schema for a widget's settings (auto-generated from Elementor controls) |
+| `mindcrafts-ai/get-page-structure` | Element tree for a page (containers, widgets, nesting) |
+| `mindcrafts-ai/get-element-settings` | Current settings for a specific element on a page |
+| `mindcrafts-ai/list-pages` | All Elementor-enabled pages/posts |
+| `mindcrafts-ai/list-templates` | Saved Elementor templates from the template library |
+| `mindcrafts-ai/get-global-settings` | Active kit/global settings (colors, typography, spacing) |
 
 ### P1 — Page CRUD (5 tools)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/create-page` | Create a new WP page/post with Elementor enabled |
-| `elementor-mcp/update-page-settings` | Update page-level Elementor settings (background, padding, etc.) |
-| `elementor-mcp/delete-page-content` | Clear all Elementor content from a page (destructive) |
-| `elementor-mcp/import-template` | Import JSON template structure into a page |
-| `elementor-mcp/export-page` | Export page's full Elementor data as JSON |
+| `mindcrafts-ai/create-page` | Create a new WP page/post with Elementor enabled |
+| `mindcrafts-ai/update-page-settings` | Update page-level Elementor settings (background, padding, etc.) |
+| `mindcrafts-ai/delete-page-content` | Clear all Elementor content from a page (destructive) |
+| `mindcrafts-ai/import-template` | Import JSON template structure into a page |
+| `mindcrafts-ai/export-page` | Export page's full Elementor data as JSON |
 
 ### P1 — Layout (4 tools)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/add-container` | Add a flexbox container (top-level or nested) |
-| `elementor-mcp/move-element` | Move an element to a new parent/position |
-| `elementor-mcp/remove-element` | Remove an element and all children (destructive) |
-| `elementor-mcp/duplicate-element` | Duplicate element with fresh IDs |
+| `mindcrafts-ai/add-container` | Add a flexbox container (top-level or nested) |
+| `mindcrafts-ai/move-element` | Move an element to a new parent/position |
+| `mindcrafts-ai/remove-element` | Remove an element and all children (destructive) |
+| `mindcrafts-ai/duplicate-element` | Duplicate element with fresh IDs |
 
 ### P1/P2 — Widgets (2 universal + 9 core + 6 Pro convenience)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/add-widget` | Universal: add any widget type to a container |
-| `elementor-mcp/update-widget` | Universal: update settings on an existing widget |
-| `elementor-mcp/add-heading` | Convenience: heading widget |
-| `elementor-mcp/add-text-editor` | Convenience: rich text editor widget |
-| `elementor-mcp/add-image` | Convenience: image widget |
-| `elementor-mcp/add-button` | Convenience: button widget |
-| `elementor-mcp/add-video` | Convenience: video widget |
-| `elementor-mcp/add-icon` | Convenience: icon widget |
-| `elementor-mcp/add-spacer` | Convenience: spacer widget |
-| `elementor-mcp/add-divider` | Convenience: divider widget |
-| `elementor-mcp/add-icon-box` | Convenience: icon box widget |
-| `elementor-mcp/add-form` | Pro: form widget |
-| `elementor-mcp/add-posts-grid` | Pro: posts grid widget |
-| `elementor-mcp/add-countdown` | Pro: countdown timer widget |
-| `elementor-mcp/add-price-table` | Pro: price table widget |
-| `elementor-mcp/add-flip-box` | Pro: flip box widget |
-| `elementor-mcp/add-animated-headline` | Pro: animated headline widget |
+| `mindcrafts-ai/add-widget` | Universal: add any widget type to a container |
+| `mindcrafts-ai/update-widget` | Universal: update settings on an existing widget |
+| `mindcrafts-ai/add-heading` | Convenience: heading widget |
+| `mindcrafts-ai/add-text-editor` | Convenience: rich text editor widget |
+| `mindcrafts-ai/add-image` | Convenience: image widget |
+| `mindcrafts-ai/add-button` | Convenience: button widget |
+| `mindcrafts-ai/add-video` | Convenience: video widget |
+| `mindcrafts-ai/add-icon` | Convenience: icon widget |
+| `mindcrafts-ai/add-spacer` | Convenience: spacer widget |
+| `mindcrafts-ai/add-divider` | Convenience: divider widget |
+| `mindcrafts-ai/add-icon-box` | Convenience: icon box widget |
+| `mindcrafts-ai/add-form` | Pro: form widget |
+| `mindcrafts-ai/add-posts-grid` | Pro: posts grid widget |
+| `mindcrafts-ai/add-countdown` | Pro: countdown timer widget |
+| `mindcrafts-ai/add-price-table` | Pro: price table widget |
+| `mindcrafts-ai/add-flip-box` | Pro: flip box widget |
+| `mindcrafts-ai/add-animated-headline` | Pro: animated headline widget |
 
 ### P2 — Templates (2 tools)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/save-as-template` | Save a page or element as reusable template |
-| `elementor-mcp/apply-template` | Apply a saved template to a page |
+| `mindcrafts-ai/save-as-template` | Save a page or element as reusable template |
+| `mindcrafts-ai/apply-template` | Apply a saved template to a page |
 
 ### P2 — Global Settings (2 tools)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/update-global-colors` | Update site-wide color palette in Elementor kit |
-| `elementor-mcp/update-global-typography` | Update site-wide typography in Elementor kit |
+| `mindcrafts-ai/update-global-colors` | Update site-wide color palette in Elementor kit |
+| `mindcrafts-ai/update-global-typography` | Update site-wide typography in Elementor kit |
 
 ### P2 — Composite (1 tool)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/build-page` | Create complete page from declarative structure in one call |
+| `mindcrafts-ai/build-page` | Create complete page from declarative structure in one call |
 
 ### Stock Images (3 tools)
 
 | Ability Name | Purpose |
 |---|---|
-| `elementor-mcp/search-images` | Search Openverse (WordPress.org) for Creative Commons images by keyword |
-| `elementor-mcp/sideload-image` | Download an external image URL into the WordPress Media Library |
-| `elementor-mcp/add-stock-image` | Search + sideload + add image widget to page in one call |
+| `mindcrafts-ai/search-images` | Search Openverse (WordPress.org) for Creative Commons images by keyword |
+| `mindcrafts-ai/sideload-image` | Download an external image URL into the WordPress Media Library |
+| `mindcrafts-ai/add-stock-image` | Search + sideload + add image widget to page in one call |
 
 ## Connecting to the MCP Server
 
@@ -205,10 +205,10 @@ The MCP Adapter includes a built-in WP-CLI stdio bridge. No HTTP round-trip, no 
 ```json
 {
   "mcpServers": {
-    "elementor-mcp": {
+    "mindcrafts-ai": {
       "type": "stdio",
       "command": "wp",
-      "args": ["mcp-adapter", "serve", "--server=elementor-mcp-server", "--user=admin", "--path=/path/to/wordpress"]
+      "args": ["mcp-adapter", "serve", "--server=mindcrafts-ai-server", "--user=admin", "--path=/path/to/wordpress"]
     }
   }
 }
@@ -218,15 +218,15 @@ The MCP Adapter includes a built-in WP-CLI stdio bridge. No HTTP round-trip, no 
 ```json
 {
   "mcpServers": {
-    "elementor-mcp": {
+    "mindcrafts-ai": {
       "command": "wp",
-      "args": ["mcp-adapter", "serve", "--server=elementor-mcp-server", "--user=admin", "--path=/path/to/wordpress"]
+      "args": ["mcp-adapter", "serve", "--server=mindcrafts-ai-server", "--user=admin", "--path=/path/to/wordpress"]
     }
   }
 }
 ```
 
-**Verify:** `wp mcp-adapter list --path=/path/to/wordpress` should show `elementor-mcp-server`.
+**Verify:** `wp mcp-adapter list --path=/path/to/wordpress` should show `mindcrafts-ai-server`.
 
 ### Option B: Node.js HTTP proxy (remote sites)
 
@@ -235,7 +235,7 @@ For remote WordPress sites or environments without WP-CLI, use the bundled proxy
 ```json
 {
   "mcpServers": {
-    "elementor-mcp": {
+    "mindcrafts-ai": {
       "command": "node",
       "args": ["bin/mcp-proxy.mjs"],
       "env": {
@@ -253,9 +253,9 @@ For remote WordPress sites or environments without WP-CLI, use the bundled proxy
 ```json
 {
   "servers": {
-    "elementor-mcp": {
+    "mindcrafts-ai": {
       "type": "http",
-      "url": "https://your-site.com/wp-json/mcp/elementor-mcp-server",
+      "url": "https://your-site.com/wp-json/mcp/mindcrafts-ai-server",
       "headers": {
         "Authorization": "Basic BASE64_ENCODED_CREDENTIALS"
       }
@@ -267,7 +267,7 @@ For remote WordPress sites or environments without WP-CLI, use the bundled proxy
 ### Testing with MCP Inspector
 
 ```bash
-npx @modelcontextprotocol/inspector wp mcp-adapter serve --server=elementor-mcp-server --user=admin --path=/path/to/wordpress
+npx @modelcontextprotocol/inspector wp mcp-adapter serve --server=mindcrafts-ai-server --user=admin --path=/path/to/wordpress
 ```
 
 ### Troubleshooting
@@ -283,7 +283,7 @@ See `mcp-config-examples.json` for copy-paste configs for all supported clients.
 
 This project follows the patterns defined in `.claude/skills/wp-plugin-dev/`:
 
-- **Bootstrap file is minimal** — `elementor-mcp.php` contains only plugin header, constants, dependency checks, `require_once` statements, and singleton init. No feature logic.
+- **Bootstrap file is minimal** — `mindcrafts-ai.php` contains only plugin header, constants, dependency checks, `require_once` statements, and singleton init. No feature logic.
 - **WordPress naming**: `snake_case` for functions/variables, `Upper_Snake_Case` for classes, `UPPER_SNAKE` for constants
 - **Prefix everything**: All functions, classes, hooks, options use the plugin prefix
 - **All strings translatable** using `__()`, `_e()`, `esc_html__()`, etc.

@@ -1,27 +1,25 @@
 {
   "mcpServers": {
-    "elementor-mcp-local": {
-      "type": "stdio",
-      "command": "C:/wp-cli/wp.bat",
+    "mindcrafts-ai": {
+      "command": "node",
       "args": [
-        "mcp-adapter",
-        "serve",
-        "--server=elementor-mcp-server",
-        "--user=admin",
-        "--path=${WP_PATH}"
+        "bin/mcp-proxy.mjs"
       ],
       "env": {
-        "WP_PATH": "C:/laragon/www/msrplugins"
+        "WP_URL": "https://codehubb.com",
+        "WP_USERNAME": "tanzeeladdprintingservice@gmail.com",
+        "WP_APP_PASSWORD": "SmNwawLVCL7lHkKcn5BVahAa"
       }
     },
-    "elementor-mcp-remote": {
-      "type": "stdio",
+    "mindcrafts-ai-remote": {
       "command": "node",
-      "args": ["bin/mcp-proxy.mjs"],
+      "args": [
+        "/home/u652508698/domains/codehubb.com/public_html/wp-content/plugins/mindcrafts-ai-for-elementor/bin/mcp-proxy.mjs"
+      ],
       "env": {
-        "WP_URL": "http://msrplugins.test",
-        "WP_USERNAME": "admin",
-        "WP_APP_PASSWORD": "QbKY iIRU J3bQ 3EGJ D4z3 XUM2"
+        "WP_URL": "https://codehubb.com",
+        "WP_USERNAME": "tanzeeladdprintingservice@gmail.com",
+        "WP_APP_PASSWORD": "SmNwawLVCL7lHkKcn5BVahAa"
       }
     }
   }

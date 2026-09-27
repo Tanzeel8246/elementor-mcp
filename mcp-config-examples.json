@@ -1,51 +1,36 @@
 {
-  "_comment": "Copy-paste MCP configurations for connecting to the Elementor MCP server. Pick the one that matches your client and environment.",
+  "_comment": "Copy-paste MCP configurations for connecting to the MindCrafts AI MCP server. Pick the one that matches your client and environment.",
 
-  "claude_desktop_local_wpcli": {
-    "_description": "Claude Desktop — local WordPress via WP-CLI (fastest, recommended for local dev)",
-    "_config_path_windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
-    "_config_path_macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
+  "desktop_remote_stdio_proxy": {
+    "_description": "Codex, Claude Desktop, Cursor, or Windsurf - remote WordPress via official Automattic STDIO proxy",
     "mcpServers": {
-      "elementor-mcp": {
-        "command": "wp",
+      "mindcrafts-ai-server": {
+        "command": "npx.cmd",
         "args": [
-          "mcp-adapter",
-          "serve",
-          "--server=elementor-mcp-server",
-          "--user=admin",
-          "--path=/path/to/wordpress"
-        ]
-      }
-    }
-  },
-
-  "claude_desktop_remote_proxy": {
-    "_description": "Claude Desktop — remote WordPress via Node.js HTTP proxy (absolute path required for Desktop)",
-    "mcpServers": {
-      "elementor-mcp": {
-        "command": "node",
-        "args": [
-          "/path/to/wp-content/plugins/elementor-mcp/bin/mcp-proxy.mjs"
+          "-y",
+          "@automattic/mcp-wordpress-remote@latest"
         ],
         "env": {
-          "WP_URL": "https://your-site.com",
-          "WP_USERNAME": "admin",
-          "WP_APP_PASSWORD": "xxxx xxxx xxxx xxxx xxxx xxxx"
+          "WP_API_URL": "https://your-site.com/wp-json/mcp/mindcrafts-ai-server",
+          "WP_API_USERNAME": "admin",
+          "WP_API_PASSWORD": "xxxx xxxx xxxx xxxx xxxx xxxx",
+          "OAUTH_ENABLED": "false"
         }
       }
     }
   },
 
-  "claude_code_mcp_json": {
-    "_description": "Claude Code — place as .mcp.json in project root",
+  "claude_desktop_local_wpcli": {
+    "_description": "Claude Desktop - local WordPress via WP-CLI",
+    "_config_path_windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
+    "_config_path_macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
     "mcpServers": {
-      "elementor-mcp": {
-        "type": "stdio",
+      "mindcrafts-ai-server": {
         "command": "wp",
         "args": [
           "mcp-adapter",
           "serve",
-          "--server=elementor-mcp-server",
+          "--server=mindcrafts-ai-server",
           "--user=admin",
           "--path=/path/to/wordpress"
         ]
@@ -53,26 +38,43 @@
     }
   },
 
-  "vscode_mcp_direct_http": {
-    "_description": "VS Code MCP extension — direct HTTP connection (add to VS Code settings)",
+  "claude_code_mcp_json": {
+    "_description": "Claude Code - place as .mcp.json in project root",
+    "mcpServers": {
+      "mindcrafts-ai-server": {
+        "type": "stdio",
+        "command": "wp",
+        "args": [
+          "mcp-adapter",
+          "serve",
+          "--server=mindcrafts-ai-server",
+          "--user=admin",
+          "--path=/path/to/wordpress"
+        ]
+      }
+    }
+  },
+
+  "direct_http_streamable": {
+    "_description": "Direct HTTP fallback for clients that fully support Streamable HTTP sessions",
     "servers": {
-      "elementor-mcp": {
+      "mindcrafts-ai-server": {
         "type": "http",
-        "url": "https://your-site.com/wp-json/mcp/elementor-mcp-server",
+        "url": "https://your-site.com/wp-json/mcp/mindcrafts-ai-server",
         "headers": {
-          "Authorization": "Basic BASE64_OF_USERNAME:APP_PASSWORD"
+          "Authorization": "Basic BASE64_OF_username:application-password"
         }
       }
     }
   },
 
   "mcp_inspector_wpcli": {
-    "_description": "MCP Inspector — test and debug tools via WP-CLI",
-    "_command": "npx @modelcontextprotocol/inspector wp mcp-adapter serve --server=elementor-mcp-server --user=admin --path=/path/to/wordpress"
+    "_description": "MCP Inspector - test and debug tools via WP-CLI",
+    "_command": "npx @modelcontextprotocol/inspector wp mcp-adapter serve --server=mindcrafts-ai-server --user=admin --path=/path/to/wordpress"
   },
 
-  "mcp_inspector_proxy": {
-    "_description": "MCP Inspector — test and debug tools via HTTP proxy",
-    "_command": "npx @modelcontextprotocol/inspector -e WP_URL=https://your-site.com -e WP_USERNAME=admin -e WP_APP_PASSWORD=xxxx node bin/mcp-proxy.mjs"
+  "mcp_remote_proxy_command": {
+    "_description": "Raw command shape for the official remote proxy",
+    "_command_windows": "set WP_API_URL=https://your-site.com/wp-json/mcp/mindcrafts-ai-server && set WP_API_USERNAME=admin && set WP_API_PASSWORD=xxxx && set OAUTH_ENABLED=false && npx.cmd -y @automattic/mcp-wordpress-remote@latest"
   }
 }

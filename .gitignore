@@ -1,25 +1,13 @@
-# Dependencies
+node_modules/
 vendor/
-
-# Composer
-composer.lock
-
-# IDE / Editor
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS files
+.env
+.mcp.json
 .DS_Store
 Thumbs.db
-
-# PHPUnit cache
-.phpunit.cache/
-
-# Claude Code local settings
-.claude/settings.local.json
-.claude/settings.json
-
-#Tests
-tests/*
+*.log
+tests/coverage/
+.phpunit.result.cache
+.vscode/
+.idea/
+wp-cli.local.yml
+codex-mcp/mindcrafts-ai-mcp.local.json

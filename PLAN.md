@@ -7,7 +7,7 @@ A WordPress plugin that extends the official WordPress MCP Adapter to expose Ele
 ## Architecture
 
 ```
-elementor-mcp/
+mindcrafts-ai/
 ├── elementor-mcp.php                    # Main plugin file (bootstrap, dependency checks)
 ├── composer.json                         # Dependencies (wordpress/mcp-adapter)
 ├── includes/
@@ -42,12 +42,12 @@ elementor-mcp/
 
 ## MCP Server Registration
 
-The plugin registers a dedicated MCP server `elementor-mcp-server` exposed at:
+The plugin registers a dedicated MCP server `mindcrafts-ai-server` exposed at:
 ```
-/wp-json/mcp/elementor-mcp-server
+/wp-json/mcp/mindcrafts-ai-server
 ```
 
-All abilities are registered under the `elementor-mcp/` namespace.
+All abilities are registered under the `mindcrafts-ai/` namespace.
 
 ---
 
@@ -140,49 +140,49 @@ Auto-generates JSON Schema from Elementor's control definitions for each widget.
 
 **Registered abilities (read-only, safe):**
 
-#### `elementor-mcp/list-widgets`
+#### `mindcrafts-ai/list-widgets`
 Returns all registered widget types with their names, titles, icons, categories, and keywords.
 ```
 Input:  { "category": "string (optional)" }
 Output: { "widgets": [ { "name", "title", "icon", "categories", "keywords" } ] }
 ```
 
-#### `elementor-mcp/get-widget-schema`
+#### `mindcrafts-ai/get-widget-schema`
 Returns the full JSON schema for a widget type's settings (all controls mapped).
 ```
 Input:  { "widget_type": "string" }
 Output: { "widget_type", "title", "schema": { JSON Schema for all controls } }
 ```
 
-#### `elementor-mcp/get-page-structure`
+#### `mindcrafts-ai/get-page-structure`
 Returns the element tree for an Elementor page (containers, widgets, nesting).
 ```
 Input:  { "post_id": "integer" }
 Output: { "post_id", "title", "type", "structure": [ nested element tree ] }
 ```
 
-#### `elementor-mcp/get-element-settings`
+#### `mindcrafts-ai/get-element-settings`
 Returns the current settings for a specific element on a page.
 ```
 Input:  { "post_id": "integer", "element_id": "string" }
 Output: { "element_id", "elType", "widgetType", "settings": { ... } }
 ```
 
-#### `elementor-mcp/list-pages`
+#### `mindcrafts-ai/list-pages`
 Returns all Elementor-enabled pages/posts.
 ```
 Input:  { "post_type": "string (optional)", "status": "string (optional)" }
 Output: { "pages": [ { "post_id", "title", "type", "status", "modified" } ] }
 ```
 
-#### `elementor-mcp/list-templates`
+#### `mindcrafts-ai/list-templates`
 Returns all saved Elementor templates.
 ```
 Input:  { "template_type": "string (optional)" }
 Output: { "templates": [ { "id", "title", "type", "date" } ] }
 ```
 
-#### `elementor-mcp/get-global-settings`
+#### `mindcrafts-ai/get-global-settings`
 Returns the active Elementor kit/global settings (colors, fonts, spacing).
 ```
 Input:  {}
@@ -195,7 +195,7 @@ Output: { "colors", "typography", "spacing", "breakpoints", ... }
 
 ### Step 6: Page Abilities (`class-page-abilities.php`)
 
-#### `elementor-mcp/create-page`
+#### `mindcrafts-ai/create-page`
 Creates a new WordPress page with Elementor enabled and optional initial content.
 ```
 Input: {
@@ -208,7 +208,7 @@ Input: {
 Output: { "post_id", "title", "edit_url", "preview_url" }
 ```
 
-#### `elementor-mcp/update-page-settings`
+#### `mindcrafts-ai/update-page-settings`
 Updates page-level settings (background, padding, custom CSS, etc.).
 ```
 Input: {
@@ -218,14 +218,14 @@ Input: {
 Output: { "success": true, "post_id" }
 ```
 
-#### `elementor-mcp/delete-page-content`
+#### `mindcrafts-ai/delete-page-content`
 Clears all Elementor content from a page (resets to blank).
 ```
 Input: { "post_id": "integer (required)" }
 Output: { "success": true }
 ```
 
-#### `elementor-mcp/import-template`
+#### `mindcrafts-ai/import-template`
 Imports a JSON template into a page.
 ```
 Input: {
@@ -236,7 +236,7 @@ Input: {
 Output: { "success": true, "elements_count" }
 ```
 
-#### `elementor-mcp/export-page`
+#### `mindcrafts-ai/export-page`
 Exports a page's Elementor data as JSON.
 ```
 Input: { "post_id": "integer (required)" }
@@ -245,7 +245,7 @@ Output: { "json": { full Elementor JSON structure } }
 
 ### Step 7: Layout Abilities (`class-layout-abilities.php`)
 
-#### `elementor-mcp/add-container`
+#### `mindcrafts-ai/add-container`
 Adds a flexbox container to a page (or nested inside another container).
 ```
 Input: {
@@ -275,7 +275,7 @@ Input: {
 Output: { "element_id": "string", "post_id" }
 ```
 
-#### `elementor-mcp/move-element`
+#### `mindcrafts-ai/move-element`
 Moves an element to a new parent or position.
 ```
 Input: {
@@ -287,14 +287,14 @@ Input: {
 Output: { "success": true }
 ```
 
-#### `elementor-mcp/remove-element`
+#### `mindcrafts-ai/remove-element`
 Removes an element (and all its children) from a page.
 ```
 Input: { "post_id": "integer", "element_id": "string" }
 Output: { "success": true }
 ```
 
-#### `elementor-mcp/duplicate-element`
+#### `mindcrafts-ai/duplicate-element`
 Duplicates an element (assigns new IDs recursively).
 ```
 Input: { "post_id": "integer", "element_id": "string" }
@@ -309,7 +309,7 @@ Output: { "new_element_id": "string" }
 
 One universal tool plus convenience tools for common widgets.
 
-#### `elementor-mcp/add-widget` (Universal)
+#### `mindcrafts-ai/add-widget` (Universal)
 Adds any widget to a container on a page.
 ```
 Input: {
@@ -322,7 +322,7 @@ Input: {
 Output: { "element_id": "string", "widget_type": "string" }
 ```
 
-#### `elementor-mcp/update-widget`
+#### `mindcrafts-ai/update-widget`
 Updates settings on an existing widget.
 ```
 Input: {
@@ -335,7 +335,7 @@ Output: { "success": true, "element_id" }
 
 #### Convenience Shortcut Tools (common widgets with pre-defined schemas):
 
-#### `elementor-mcp/add-heading`
+#### `mindcrafts-ai/add-heading`
 ```
 Input: {
     "post_id": integer,
@@ -351,7 +351,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-text-editor`
+#### `mindcrafts-ai/add-text-editor`
 ```
 Input: {
     "post_id": integer,
@@ -364,7 +364,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-image`
+#### `mindcrafts-ai/add-image`
 ```
 Input: {
     "post_id": integer,
@@ -382,7 +382,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-button`
+#### `mindcrafts-ai/add-button`
 ```
 Input: {
     "post_id": integer,
@@ -399,7 +399,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-video`
+#### `mindcrafts-ai/add-video`
 ```
 Input: {
     "post_id": integer,
@@ -416,7 +416,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-icon`
+#### `mindcrafts-ai/add-icon`
 ```
 Input: {
     "post_id": integer,
@@ -431,7 +431,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-spacer`
+#### `mindcrafts-ai/add-spacer`
 ```
 Input: {
     "post_id": integer,
@@ -441,7 +441,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-divider`
+#### `mindcrafts-ai/add-divider`
 ```
 Input: {
     "post_id": integer,
@@ -455,7 +455,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-icon-box`
+#### `mindcrafts-ai/add-icon-box`
 ```
 Input: {
     "post_id": integer,
@@ -474,7 +474,7 @@ Output: { "element_id" }
 
 ### Step 9: Pro Widget Convenience Tools (when Elementor Pro is active)
 
-#### `elementor-mcp/add-form`
+#### `mindcrafts-ai/add-form`
 ```
 Input: {
     "post_id": integer,
@@ -497,7 +497,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-posts-grid`
+#### `mindcrafts-ai/add-posts-grid`
 ```
 Input: {
     "post_id": integer,
@@ -510,7 +510,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-countdown`
+#### `mindcrafts-ai/add-countdown`
 ```
 Input: {
     "post_id": integer,
@@ -525,7 +525,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-price-table`
+#### `mindcrafts-ai/add-price-table`
 ```
 Input: {
     "post_id": integer,
@@ -542,7 +542,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-flip-box`
+#### `mindcrafts-ai/add-flip-box`
 ```
 Input: {
     "post_id": integer,
@@ -561,7 +561,7 @@ Input: {
 Output: { "element_id" }
 ```
 
-#### `elementor-mcp/add-animated-headline`
+#### `mindcrafts-ai/add-animated-headline`
 ```
 Input: {
     "post_id": integer,
@@ -584,7 +584,7 @@ Output: { "element_id" }
 
 ### Step 10: Template Abilities (`class-template-abilities.php`)
 
-#### `elementor-mcp/save-as-template`
+#### `mindcrafts-ai/save-as-template`
 Saves a page or element as a reusable template.
 ```
 Input: {
@@ -596,7 +596,7 @@ Input: {
 Output: { "template_id", "title" }
 ```
 
-#### `elementor-mcp/apply-template`
+#### `mindcrafts-ai/apply-template`
 Applies a saved template to a page at a given position.
 ```
 Input: {
@@ -610,7 +610,7 @@ Output: { "success": true, "elements_added": integer }
 
 ### Step 11: Global Abilities (`class-global-abilities.php`)
 
-#### `elementor-mcp/update-global-colors`
+#### `mindcrafts-ai/update-global-colors`
 Updates site-wide color palette in the Elementor kit.
 ```
 Input: {
@@ -619,7 +619,7 @@ Input: {
 Output: { "success": true }
 ```
 
-#### `elementor-mcp/update-global-typography`
+#### `mindcrafts-ai/update-global-typography`
 Updates site-wide typography settings.
 ```
 Input: {
@@ -634,7 +634,7 @@ Output: { "success": true }
 
 ### Step 12: Page Builder Composite Tool
 
-#### `elementor-mcp/build-page`
+#### `mindcrafts-ai/build-page`
 Creates a complete page from a declarative structure in a single call. This is the most powerful tool - it creates the page and all elements at once.
 
 ```

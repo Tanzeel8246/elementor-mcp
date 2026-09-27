@@ -1,0 +1,25 @@
+<svg xmlns="http://www.svg.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- MindCrafts AI Logo -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C3FC5" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#F4B942" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+  
+  <g filter="url(#glow)">
+    <!-- Brain / Tech Nodes Concept -->
+    <path d="M256,120 C180,120 130,170 130,230 C130,270 150,305 180,325 L180,380 C180,395 195,400 210,390 L256,360 L302,390 C317,400 332,395 332,380 L332,325 C362,305 382,270 382,230 C382,170 332,120 256,120 Z" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" />
+    <circle cx="256" cy="200" r="28" fill="#FFFFFF" />
+    <circle cx="190" cy="250" r="20" fill="#FFFFFF" />
+    <circle cx="322" cy="250" r="20" fill="#FFFFFF" />
+    <path d="M256,228 L190,250 M256,228 L322,250 M256,228 L256,310" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+  </g>
+</svg>

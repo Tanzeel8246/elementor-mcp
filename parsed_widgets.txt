@@ -1,0 +1,29 @@
+﻿
+name                   title             
+----                   -----             
+heading                Heading           
+button                 Button            
+counter                Counter           
+clotya-counter-banner  Counter Banner (K)
+clotya-button          Button (K)        
+clotya-counter-text    Counter Text (K)  
+contact-buttons        Single Chat       
+e-heading              Heading           
+e-button               Button            
+e-form-submit-button   Submit button     
+portfolio              Portfolio         
+share-buttons          Share Buttons     
+facebook-button        Facebook Button   
+paypal-button          PayPal Button     
+stripe-button          Stripe Button     
+contact-buttons-var-1  Multi Chat        
+contact-buttons-var-3  Info Button Box   
+contact-buttons-var-4  Vertical Links    
+contact-buttons-var-5  Classic           
+contact-buttons-var-6  Quick Access Bar  
+contact-buttons-var-7  Mobile Bar        
+contact-buttons-var-8  Resource Box      
+contact-buttons-var-9  Animated Classic  
+contact-buttons-var-10 Interactive       
+
+

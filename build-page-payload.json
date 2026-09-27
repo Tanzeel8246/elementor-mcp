@@ -1,0 +1,119 @@
+{
+  "jsonrpc": "2.0",
+  "method": "tools/call",
+  "params": {
+    "name": "mindcrafts-ai-build-page",
+    "arguments": {
+      "title": "CodeHubb Home",
+      "status": "publish",
+      "post_type": "page",
+      "structure": [
+        {
+          "type": "container",
+          "settings": {},
+          "children": [
+            {
+              "type": "widget",
+              "widget_type": "heading",
+              "settings": {
+                "title": "CODEHUBB\nDesign. Develop. Dominate.",
+                "header_size": "h1"
+              }
+            },
+            {
+              "type": "widget",
+              "widget_type": "text-editor",
+              "settings": {
+                "editor": "<p>We create powerful websites, web applications and digital experiences that help businesses grow online.</p>"
+              }
+            },
+            {
+              "type": "container",
+              "settings": {},
+              "children": [
+                {
+                  "type": "widget",
+                  "widget_type": "button",
+                  "settings": {
+                    "text": "Start Your Project"
+                  }
+                },
+                {
+                  "type": "widget",
+                  "widget_type": "button",
+                  "settings": {
+                    "text": "WhatsApp Now"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "settings": {},
+          "children": [
+            {
+              "type": "widget",
+              "widget_type": "heading",
+              "settings": {
+                "title": "Our Services",
+                "header_size": "h2"
+              }
+            },
+            {
+              "type": "widget",
+              "widget_type": "text-editor",
+              "settings": {
+                "editor": "<ul><li>Website Design</li><li>WordPress Development</li><li>E-commerce Stores</li><li>Landing Pages</li><li>UI/UX Design</li><li>SEO Optimization</li></ul>"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "settings": {},
+          "children": [
+            {
+              "type": "widget",
+              "widget_type": "heading",
+              "settings": {
+                "title": "Why Choose Us",
+                "header_size": "h2"
+              }
+            },
+            {
+              "type": "widget",
+              "widget_type": "text-editor",
+              "settings": {
+                "editor": "<p>Fast Delivery | Modern Design | SEO Friendly | Mobile Responsive | Ongoing Support</p>"
+              }
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "settings": {},
+          "children": [
+            {
+              "type": "widget",
+              "widget_type": "heading",
+              "settings": {
+                "title": "Ready To Grow Your Business Online?",
+                "header_size": "h2"
+              }
+            },
+            {
+              "type": "widget",
+              "widget_type": "button",
+              "settings": {
+                "text": "Get Free Consultation"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "id": 2
+}

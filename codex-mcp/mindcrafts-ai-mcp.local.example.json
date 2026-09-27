@@ -1,0 +1,8 @@
+{
+  "WP_API_URL": "https://tools.codehubb.com/wp-json/mcp/mindcrafts-ai-server",
+  "WP_API_USERNAME": "adminbockup",
+  "WP_API_PASSWORD": "PUT_NEW_APPLICATION_PASSWORD_HERE",
+  "OAUTH_ENABLED": "false",
+  "LOG_FILE": "C:/tmp/mindcrafts-mcp.log",
+  "LOG_LEVEL": "3"
+}

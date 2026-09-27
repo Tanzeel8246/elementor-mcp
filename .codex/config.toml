@@ -1,0 +1,8 @@
+[mcp_servers.elementor-mcp-remote]
+command = "node"
+args = ["bin/mcp-proxy.mjs"]
+
+[mcp_servers.elementor-mcp-remote.env]
+WP_URL = "http://msrplugins.test"
+WP_USERNAME = "admin"
+WP_APP_PASSWORD = "QbKY iIRU J3bQ 3EGJ D4z3 XUM2"
