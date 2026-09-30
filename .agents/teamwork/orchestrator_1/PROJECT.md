@@ -41,11 +41,11 @@
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
 | M0 | Tooling Fix | Fix `class-query-abilities.php:570` and bump version to 3.1.6 across 4 files | none | DONE |
-| M1 | Services Page Native Reconstruction | Native Flexbox Containers and core widgets for Post ID 36 | M0 | IN_PROGRESS |
-| M2 | Home Page Native Reconstruction | Native Flexbox Containers, widget replacement, and asset sideloading for Post ID 74 | M0, M1 | PLANNED |
-| M3 | SEO & Responsive Perfection | Single H1, nested headings, alt tags, mobile responsive scaling, glassmorphic styling | M1, M2 | PLANNED |
-| M4 | Zero-Defect QA & Adversarial Audit | Link verification, copy audit, challenger stress testing, forensic audit gate | M1, M2, M3 | PLANNED |
-| M5 | Portfolio Expansion Blueprint | Blueprint for remaining pages (38, 32, 44, 34) based on verified design system | M4 | PLANNED |
+| M1 | Services Page Native Reconstruction | Native Flexbox Containers and core widgets for Post ID 36 | M0 | DONE |
+| M2 | Home Page Native Reconstruction | Native Flexbox Containers, widget replacement, and asset sideloading for Post ID 74 | M0, M1 | DONE |
+| M3 | SEO & Responsive Perfection | Single H1, nested headings, alt tags, mobile responsive scaling, glassmorphic styling | M1, M2 | DONE |
+| M4 | Zero-Defect QA & Adversarial Audit | Link verification, copy audit, challenger stress testing, forensic audit gate | M1, M2, M3 | DONE |
+| M5 | Portfolio Expansion Blueprint | Blueprint for remaining pages (38, 32, 44, 34) based on verified design system | M4 | DONE |
 
 ## Interface Contracts
 ### MindCrafts AI MCP Tools

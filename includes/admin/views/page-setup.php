@@ -86,6 +86,48 @@ $notice_result = isset( $_GET['dependency_result'] ) ? sanitize_key( wp_unslash(
 	<div id="mindcrafts-ai-migration-results" style="display: none; margin-top: 18px; padding: 16px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);"></div>
 </div>
 
+<!-- Emergency Content Recovery & Revision Guide Card -->
+<div class="mindcrafts-ai-card" style="border: 2px solid #10B981; background: #ffffff; margin-bottom: 24px; padding: 22px; border-radius: 14px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.08);">
+	<div style="display: flex; align-items: flex-start; gap: 16px;">
+		<div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(16, 185, 129, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+			<span class="dashicons dashicons-backup" style="color: #059669; font-size: 24px; width: 24px; height: 24px;"></span>
+		</div>
+		<div style="flex: 1;">
+			<div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); padding: 3px 10px; border-radius: 9999px; margin-bottom: 8px;">
+				<span style="font-size: 11px; font-weight: 700; color: #059669; text-transform: uppercase;"><?php esc_html_e( 'Emergency Disaster Recovery & History', 'mindcrafts-ai' ); ?></span>
+			</div>
+			<h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 800; color: #0f172a;">
+				<?php esc_html_e( 'Restore Previous Page Content & Design (Revisions & Snapshots)', 'mindcrafts-ai' ); ?>
+			</h3>
+			<p style="margin: 0 0 14px 0; color: #475569; font-size: 13px; line-height: 1.6;">
+				<?php esc_html_e( 'If an AI agent accidentally cleared a page or created an empty skeleton, your original content is NOT lost! You can restore it immediately using either method below:', 'mindcrafts-ai' ); ?>
+			</p>
+
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+				<div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 14px; border-radius: 8px;">
+					<strong style="color: #0f172a; font-size: 13px; display: block; margin-bottom: 4px;">
+						<?php esc_html_e( 'Method 1: Inside Elementor (1-Click Revisions)', 'mindcrafts-ai' ); ?>
+					</strong>
+					<ol style="margin: 0; padding-left: 18px; color: #64748b; font-size: 12px; line-height: 1.5;">
+						<li><?php esc_html_e( 'Open the page in Elementor ("Edit with Elementor").', 'mindcrafts-ai' ); ?></li>
+						<li><?php esc_html_e( 'At the bottom-left sidebar, click the History (Clock) icon.', 'mindcrafts-ai' ); ?></li>
+						<li><?php esc_html_e( 'Switch to the "Revisions" tab and select your previous version.', 'mindcrafts-ai' ); ?></li>
+						<li><?php esc_html_e( 'Click "Apply" to restore all original text and design.', 'mindcrafts-ai' ); ?></li>
+					</ol>
+				</div>
+				<div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 14px; border-radius: 8px;">
+					<strong style="color: #0f172a; font-size: 13px; display: block; margin-bottom: 4px;">
+						<?php esc_html_e( 'Method 2: MindCrafts Auto-Snapshots', 'mindcrafts-ai' ); ?>
+					</strong>
+					<p style="margin: 0; color: #64748b; font-size: 12px; line-height: 1.5;">
+						<?php esc_html_e( 'MindCrafts AI automatically takes a full snapshot before any page modification. You or an AI agent can call "mindcrafts-ai/list-snapshots" and "mindcrafts-ai/restore-snapshot" to roll back any page at any time.', 'mindcrafts-ai' ); ?>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="mindcrafts-ai-steps">
 
 	<!-- STEP 1: Dependencies & Environment -->

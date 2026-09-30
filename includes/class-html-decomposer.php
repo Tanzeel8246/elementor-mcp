@@ -262,6 +262,19 @@ class MindCrafts_AI_Html_Decomposer {
 		// Extract child widgets and inner containers.
 		$child_elements = self::extract_widgets_from_node( $node, $factory );
 
+		// Zero-content prevention fallback: Never create an empty container if the node has text!
+		if ( empty( $child_elements ) ) {
+			$raw_text = trim( $node->textContent );
+			if ( ! empty( $raw_text ) ) {
+				$child_elements[] = $factory->create_widget(
+					'text-editor',
+					array(
+						'editor' => '<p>' . esc_html( $raw_text ) . '</p>',
+					)
+				);
+			}
+		}
+
 		return $factory->create_container( $container_settings, $child_elements );
 	}
 
@@ -313,6 +326,67 @@ class MindCrafts_AI_Html_Decomposer {
 						'text-editor',
 						array(
 							'editor' => '<p>' . esc_html( $text ) . '</p>',
+						)
+					);
+				}
+				continue;
+			}
+
+			// Badges, Labels, Subtitles, Inline text (<span>, <label>, <small>, <strong>, <b>, <em>).
+			if ( in_array( $tag, array( 'span', 'label', 'small', 'strong', 'b', 'em' ), true ) ) {
+				$text = trim( $child->textContent );
+				if ( ! empty( $text ) ) {
+					if ( strlen( $text ) <= 80 ) {
+						$heading_settings = array(
+							'title'       => $text,
+							'header_size' => 'div',
+						);
+						if ( ! empty( $child_css['color'] ) ) {
+							$heading_settings['title_color'] = $child_css['color'];
+						}
+						$widgets[] = $factory->create_widget( 'heading', $heading_settings );
+					} else {
+						$widgets[] = $factory->create_widget(
+							'text-editor',
+							array(
+								'editor' => '<p>' . esc_html( $text ) . '</p>',
+							)
+						);
+					}
+				}
+				continue;
+			}
+
+			// Feature & Navigation Lists (<ul>, <ol>).
+			if ( 'ul' === $tag || 'ol' === $tag ) {
+				$items = array();
+				foreach ( $child->childNodes as $li ) {
+					if ( XML_ELEMENT_NODE === $li->nodeType && 'li' === strtolower( $li->nodeName ) ) {
+						$li_text = trim( $li->textContent );
+						if ( ! empty( $li_text ) ) {
+							$items[] = '<li>' . esc_html( $li_text ) . '</li>';
+						}
+					}
+				}
+				if ( ! empty( $items ) ) {
+					$widgets[] = $factory->create_widget(
+						'text-editor',
+						array(
+							'editor' => '<' . $tag . '>' . implode( '', $items ) . '</' . $tag . '>',
+						)
+					);
+				}
+				continue;
+			}
+
+			// Blockquotes & Testimonials (<blockquote>).
+			if ( 'blockquote' === $tag ) {
+				$text = trim( $child->textContent );
+				if ( ! empty( $text ) ) {
+					$widgets[] = $factory->create_widget(
+						'text-editor',
+						array(
+							'editor' => '<blockquote>' . esc_html( $text ) . '</blockquote>',
 						)
 					);
 				}
@@ -385,7 +459,7 @@ class MindCrafts_AI_Html_Decomposer {
 
 			// Inner flex containers or columns (<div>).
 			if ( 'div' === $tag ) {
-				$is_flex = ! empty( $child_css['display'] ) && 'flex' === $child_css['display'];
+				$is_flex     = ! empty( $child_css['display'] ) && 'flex' === $child_css['display'];
 				$sub_widgets = self::extract_widgets_from_node( $child, $factory );
 
 				if ( ! empty( $sub_widgets ) ) {
@@ -405,6 +479,28 @@ class MindCrafts_AI_Html_Decomposer {
 						// Flatten single widgets.
 						foreach ( $sub_widgets as $sw ) {
 							$widgets[] = $sw;
+						}
+					}
+				} else {
+					// Fallback for divs with direct text: Never lose text!
+					$div_text = trim( $child->textContent );
+					if ( ! empty( $div_text ) ) {
+						if ( strlen( $div_text ) <= 70 && ( ! empty( $child_css['font-weight'] ) || ! empty( $child_css['font-size'] ) ) ) {
+							$widgets[] = $factory->create_widget(
+								'heading',
+								array(
+									'title'       => $div_text,
+									'header_size' => 'h3',
+									'title_color' => $child_css['color'] ?? '',
+								)
+							);
+						} else {
+							$widgets[] = $factory->create_widget(
+								'text-editor',
+								array(
+									'editor' => '<p>' . esc_html( $div_text ) . '</p>',
+								)
+							);
 						}
 					}
 				}

@@ -67,6 +67,8 @@ class MindCrafts_AI_Admin {
 		add_action( 'wp_ajax_mindcrafts_ai_deactivate_license', array( $this, 'handle_ajax_deactivate_license' ) );
 		add_action( 'wp_ajax_mindcrafts_ai_clear_logs', array( $this, 'handle_ajax_clear_logs' ) );
 		add_action( 'wp_ajax_mindcrafts_ai_migrate_pages', array( $this, 'handle_ajax_migrate_pages' ) );
+		add_action( 'wp_ajax_mindcrafts_ai_list_snapshots', array( $this, 'handle_ajax_list_snapshots' ) );
+		add_action( 'wp_ajax_mindcrafts_ai_restore_snapshot', array( $this, 'handle_ajax_restore_snapshot' ) );
 
 		add_filter( 'mindcrafts_ai_ability_names', array( $this, 'filter_ability_names' ) );
 		add_filter( 'plugin_action_links_' . MINDCRAFTS_AI_BASENAME, array( $this, 'add_plugin_action_links' ) );
@@ -446,6 +448,64 @@ class MindCrafts_AI_Admin {
 		}
 
 		wp_send_json_success( $result );
+	}
+
+	/**
+	 * AJAX handler to list snapshots for a given page.
+	 *
+	 * @since 3.1.7
+	 */
+	public function handle_ajax_list_snapshots(): void {
+		check_ajax_referer( 'mindcrafts_ai_admin_nonce', 'nonce' );
+
+		if ( ! current_user_can( 'edit_pages' ) ) {
+			wp_send_json_error( array( 'message' => __( 'Insufficient permissions to view page history.', 'mindcrafts-ai' ) ) );
+		}
+
+		$post_id = absint( $_POST['post_id'] ?? 0 );
+		if ( ! $post_id ) {
+			wp_send_json_error( array( 'message' => __( 'Invalid post ID.', 'mindcrafts-ai' ) ) );
+		}
+
+		$data      = new MindCrafts_AI_Data();
+		$snapshots = $data->list_snapshots( $post_id );
+
+		wp_send_json_success( array( 'snapshots' => $snapshots ) );
+	}
+
+	/**
+	 * AJAX handler to restore a page to a snapshot.
+	 *
+	 * @since 3.1.7
+	 */
+	public function handle_ajax_restore_snapshot(): void {
+		check_ajax_referer( 'mindcrafts_ai_admin_nonce', 'nonce' );
+
+		if ( ! current_user_can( 'edit_pages' ) ) {
+			wp_send_json_error( array( 'message' => __( 'Insufficient permissions to restore pages.', 'mindcrafts-ai' ) ) );
+		}
+
+		$post_id = absint( $_POST['post_id'] ?? 0 );
+		$index   = intval( $_POST['index'] ?? -1 );
+
+		if ( ! $post_id || $index < 0 ) {
+			wp_send_json_error( array( 'message' => __( 'Invalid post ID or snapshot index.', 'mindcrafts-ai' ) ) );
+		}
+
+		$data   = new MindCrafts_AI_Data();
+		$result = $data->restore_snapshot( $post_id, $index );
+
+		if ( is_wp_error( $result ) ) {
+			wp_send_json_error( array( 'message' => $result->get_error_message() ) );
+		}
+
+		wp_send_json_success(
+			array(
+				'message'     => __( 'Snapshot successfully restored! The page content has been rolled back.', 'mindcrafts-ai' ),
+				'edit_url'    => admin_url( 'post.php?post=' . $post_id . '&action=elementor' ),
+				'preview_url' => get_permalink( $post_id ),
+			)
+		);
 	}
 
 	/**

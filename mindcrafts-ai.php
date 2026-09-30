@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       MindCrafts AI for Elementor
  * Description:       Transform Elementor with AI power — build complete pages from a single prompt, manage widgets, layouts, templates, WooCommerce, SEO, and more via MCP tools for AI agents like Claude and Cursor.
- * Version:           3.1.6
+ * Version:           3.1.7
  * Requires at least: 6.0
  * Tested up to:      6.8
  * Requires PHP:      7.4
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Plugin constants.
-define( 'MINDCRAFTS_AI_VERSION', '3.1.6' );
+define( 'MINDCRAFTS_AI_VERSION', '3.1.7' );
 define( 'MINDCRAFTS_AI_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MINDCRAFTS_AI_URL', plugin_dir_url( __FILE__ ) );
 define( 'MINDCRAFTS_AI_BASENAME', plugin_basename( __FILE__ ) );

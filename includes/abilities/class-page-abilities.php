@@ -334,16 +334,20 @@ class MindCrafts_AI_Page_Abilities {
 			'mindcrafts-ai/delete-page-content',
 			array(
 				'label'               => __( 'Delete Page Content', 'mindcrafts-ai' ),
-				'description'         => __( 'Clears all Elementor content from a page, resetting it to blank while keeping the page itself.', 'mindcrafts-ai' ),
+				'description'         => __( 'DANGER: Destructively clears all Elementor content from a page, resetting it to a blank canvas. DO NOT use this tool to "rebuild", "convert", or "update" an existing page — doing so destroys all user text, media, and design! To rebuild or convert a page, overwrite it directly with build-page or convert-html-to-elementor. If you truly wish to wipe this page to a blank canvas, you must explicitly pass confirm_wipe: true.', 'mindcrafts-ai' ),
 				'category'            => 'mindcrafts-ai',
 				'execute_callback'    => array( $this, 'execute_delete_page_content' ),
 				'permission_callback' => array( $this, 'check_delete_permission' ),
 				'input_schema'        => array(
 					'type'       => 'object',
 					'properties' => array(
-						'post_id' => array(
+						'post_id'      => array(
 							'type'        => 'integer',
 							'description' => __( 'The post/page ID.', 'mindcrafts-ai' ),
+						),
+						'confirm_wipe' => array(
+							'type'        => 'boolean',
+							'description' => __( 'Safety confirmation. Must be explicitly set to true to confirm wiping all content from this page. DANGER: Do not use this when updating an existing page!', 'mindcrafts-ai' ),
 						),
 					),
 					'required'   => array( 'post_id' ),
@@ -367,10 +371,20 @@ class MindCrafts_AI_Page_Abilities {
 	}
 
 	public function execute_delete_page_content( $input ) {
-		$post_id = absint( $input['post_id'] ?? 0 );
+		$post_id      = absint( $input['post_id'] ?? 0 );
+		$confirm_wipe = ! empty( $input['confirm_wipe'] );
 
 		if ( ! $post_id ) {
 			return new \WP_Error( 'missing_post_id', __( 'The post_id parameter is required.', 'mindcrafts-ai' ) );
+		}
+
+		// Anti-Wipe Safety Armor: Prevent AI agents from carelessly clearing existing content.
+		$current_elements = $this->data->get_page_elements( $post_id );
+		if ( ! empty( $current_elements ) && ! $confirm_wipe ) {
+			return new \WP_Error(
+				'wipe_confirmation_required',
+				__( 'DANGER: This page currently contains live content. Calling delete-page-content will completely destroy all existing text, media, and design. If you intend to rebuild or convert this page, DO NOT delete it first — use build-page or convert-html-to-elementor directly with full widgets and real content. If you truly wish to wipe this page to a blank canvas, pass confirm_wipe: true.', 'mindcrafts-ai' )
+			);
 		}
 
 		// T3-4: Save history snapshot before destructive content clearing

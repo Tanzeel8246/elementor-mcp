@@ -101,7 +101,7 @@ class MindCrafts_AI_Layout_Abilities {
 			'mindcrafts-ai/add-container',
 			array(
 				'label'               => __( 'Add Container', 'mindcrafts-ai' ),
-				'description'         => __( 'Adds a flexbox container to a page. Omit parent_id for top-level, or provide a parent container ID for nesting.', 'mindcrafts-ai' ),
+				'description'         => __( 'Adds a flexbox container to a page. Omit parent_id for top-level, or provide a parent container ID for nesting. NOTE: A container is only a structural layout box. You MUST populate it with content widgets (heading, text-editor, button, image) using add-widget or convenience tools. NEVER leave containers empty without content on a published page.', 'mindcrafts-ai' ),
 				'category'            => 'mindcrafts-ai',
 				'execute_callback'    => array( $this, 'execute_add_container' ),
 				'permission_callback' => array( $this, 'check_edit_permission' ),

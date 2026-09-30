@@ -105,16 +105,20 @@ class MindCrafts_AI_Composite_Abilities {
 			'mindcrafts-ai/build-page',
 			array(
 				'label'               => __( 'Build Page', 'mindcrafts-ai' ),
-				'description'         => __( 'Creates a complete Elementor page from a declarative structure in a single call. Pass a "structure" array of containers and widgets. IMPORTANT MANDATE FOR VISUAL DESIGNERS: You MUST construct native Elementor Containers and Widgets (heading, button, image, icon-box, etc.). NEVER dump monolithic HTML page code into a single text-editor or html widget — doing so renders the page uneditable for visual WordPress designers. Use "heading" for titles, "button" for links/CTAs, "image" for pictures, "icon-box" for feature cards, and "text-editor" ONLY for brief text paragraphs.', 'mindcrafts-ai' ),
+				'description'         => __( 'Creates or rebuilds an entire Elementor page from a declarative structure in a single call. To rebuild or convert an existing page, pass its post_id. MANDATORY CONTENT MANDATE: Every container MUST contain real visual widgets (heading with real title, text-editor with real paragraph text, button with real label/URL, image with real media). NEVER submit empty containers or placeholder wireframes without content — empty containers are strictly rejected. NEVER call delete-page-content to update or rebuild an existing page; pass post_id directly here.', 'mindcrafts-ai' ),
 				'category'            => 'mindcrafts-ai',
 				'execute_callback'    => array( $this, 'execute_build_page' ),
 				'permission_callback' => array( $this, 'check_create_permission' ),
 				'input_schema'        => array(
 					'type'       => 'object',
 					'properties' => array(
+						'post_id'       => array(
+							'type'        => 'integer',
+							'description' => __( 'Optional existing post/page ID. If provided, rebuilds and replaces this existing page structure without needing to delete it first. Automatically creates a backup snapshot.', 'mindcrafts-ai' ),
+						),
 						'title'         => array(
 							'type'        => 'string',
-							'description' => __( 'Page title.', 'mindcrafts-ai' ),
+							'description' => __( 'Page title. Required if creating a new page.', 'mindcrafts-ai' ),
 						),
 						'status'        => array(
 							'type'        => 'string',
@@ -132,7 +136,7 @@ class MindCrafts_AI_Composite_Abilities {
 						),
 						'structure'     => array(
 							'type'        => 'array',
-							'description' => __( 'Declarative element tree. Each item has type (container|widget), settings, and optionally children (for containers) or widget_type (for widgets). Use "children" key (not "elements") for nested items. DO NOT dump raw HTML layouts inside text-editor; use native Elementor containers, heading widgets, button widgets, and image widgets for all visual elements.', 'mindcrafts-ai' ),
+							'description' => __( 'Declarative element tree. Each item has type (container|widget), settings, and optionally children (for containers) or widget_type (for widgets). Use "children" key (not "elements") for nested items. DO NOT submit empty containers without content! Populate real heading widgets, text-editor widgets, button widgets, and image widgets with actual text.', 'mindcrafts-ai' ),
 							'items'       => array(
 								'type'       => 'object',
 								'properties' => array(
@@ -148,7 +152,7 @@ class MindCrafts_AI_Composite_Abilities {
 							),
 						),
 					),
-					'required'   => array( 'title', 'structure' ),
+					'required'   => array( 'structure' ),
 				),
 				'output_schema'       => array(
 					'type'       => 'object',
@@ -506,18 +510,19 @@ class MindCrafts_AI_Composite_Abilities {
 	 * @return array|\WP_Error
 	 */
 	public function execute_build_page( $input ) {
-		$title         = sanitize_text_field( $input['title'] ?? '' );
-		$status        = sanitize_key( $input['status'] ?? 'draft' );
-		$post_type     = sanitize_key( $input['post_type'] ?? 'page' );
-		$page_settings = $input['page_settings'] ?? array();
-		$structure     = $input['structure'] ?? array();
-
-		if ( empty( $title ) ) {
-			return new \WP_Error( 'missing_title', __( 'The title parameter is required.', 'mindcrafts-ai' ) );
-		}
+		$target_post_id = absint( $input['post_id'] ?? 0 );
+		$title          = sanitize_text_field( $input['title'] ?? '' );
+		$status         = sanitize_key( $input['status'] ?? 'draft' );
+		$post_type      = sanitize_key( $input['post_type'] ?? 'page' );
+		$page_settings  = $input['page_settings'] ?? array();
+		$structure      = $input['structure'] ?? array();
 
 		if ( empty( $structure ) || ! is_array( $structure ) ) {
 			return new \WP_Error( 'missing_structure', __( 'The structure parameter is required and must be an array.', 'mindcrafts-ai' ) );
+		}
+
+		if ( ! $target_post_id && empty( $title ) ) {
+			return new \WP_Error( 'missing_title', __( 'The title parameter is required when creating a new page.', 'mindcrafts-ai' ) );
 		}
 
 		if ( ! in_array( $status, array( 'draft', 'publish' ), true ) ) {
@@ -533,46 +538,82 @@ class MindCrafts_AI_Composite_Abilities {
 			return new \WP_Error( 'publish_not_allowed', __( 'You do not have permission to publish this content type.', 'mindcrafts-ai' ) );
 		}
 
-		// T1-3 FIX: Validate and build the element tree BEFORE creating the post.
-		// Invalid structures now return errors without creating any orphan pages.
+		// Validate and build the element tree BEFORE touching database.
 		$elements_count = 0;
-		$elements       = $this->build_elements( $structure, false, $elements_count );
+		$widgets_count  = 0;
+		$elements       = $this->build_elements( $structure, false, $elements_count, $widgets_count );
 
 		if ( is_wp_error( $elements ) ) {
-			return $elements; // Fail early — no post created yet.
+			return $elements;
 		}
 
-		// 1. Create the WordPress post only after structure is validated.
-		$post_id = wp_insert_post(
-			array(
-				'post_title'  => $title,
-				'post_status' => $status,
-				'post_type'   => $post_type,
-			),
-			true
-		);
+		// Anti-Skeleton Guardrail: Prevent saving pages with zero content widgets!
+		if ( 0 === $widgets_count ) {
+			return new \WP_Error(
+				'empty_containers_prohibited',
+				__( 'REJECTED: The provided structure contains empty containers with ZERO widgets. A website page cannot be an empty wireframe without content. You must populate containers with real widgets: headings with real titles, text-editors with actual paragraphs, buttons with real labels/links, and images with media. Empty containers without content are strictly rejected.', 'mindcrafts-ai' )
+			);
+		}
 
-		if ( is_wp_error( $post_id ) ) {
-			return $post_id;
+		// Rebuild existing page or create a new one.
+		if ( $target_post_id ) {
+			$existing_post = get_post( $target_post_id );
+			if ( ! $existing_post ) {
+				return new \WP_Error( 'post_not_found', __( 'Specified post_id does not exist.', 'mindcrafts-ai' ) );
+			}
+			if ( ! current_user_can( 'edit_post', $target_post_id ) ) {
+				return new \WP_Error( 'edit_not_allowed', __( 'You do not have permission to edit this post.', 'mindcrafts-ai' ) );
+			}
+			$post_id = $target_post_id;
+			$title   = ! empty( $title ) ? $title : $existing_post->post_title;
+
+			// Save automatic snapshot before replacing content!
+			$this->data->save_snapshot( $post_id, __( 'Auto backup before build-page replacement', 'mindcrafts-ai' ) );
+
+			if ( ! empty( $input['title'] ) && $title !== $existing_post->post_title ) {
+				wp_update_post(
+					array(
+						'ID'         => $post_id,
+						'post_title' => $title,
+					)
+				);
+			}
+		} else {
+			$post_id = wp_insert_post(
+				array(
+					'post_title'  => $title,
+					'post_status' => $status,
+					'post_type'   => $post_type,
+				),
+				true
+			);
+
+			if ( is_wp_error( $post_id ) ) {
+				return $post_id;
+			}
 		}
 
 		// Explicitly set protected meta keys.
 		update_post_meta( $post_id, '_elementor_edit_mode', 'builder' );
 		update_post_meta( $post_id, '_elementor_template_type', 'wp-' . $post_type );
 
-		// 2. Save the element data (CSS regeneration handled inside save_page_data).
+		// Save the element data.
 		$result = $this->data->save_page_data( $post_id, $elements );
 
 		if ( is_wp_error( $result ) ) {
-			wp_delete_post( $post_id, true );
+			if ( ! $target_post_id ) {
+				wp_delete_post( $post_id, true );
+			}
 			return $result;
 		}
 
-		// 3. Save page settings if provided.
+		// Save page settings if provided.
 		if ( ! empty( $page_settings ) ) {
 			$settings_result = $this->data->save_page_settings( $post_id, $page_settings );
 			if ( is_wp_error( $settings_result ) ) {
-				wp_delete_post( $post_id, true );
+				if ( ! $target_post_id ) {
+					wp_delete_post( $post_id, true );
+				}
 				return $settings_result;
 			}
 		}
@@ -586,6 +627,7 @@ class MindCrafts_AI_Composite_Abilities {
 			'edit_url'         => $edit_url,
 			'preview_url'      => $preview_url ? $preview_url : '',
 			'elements_created' => $elements_count,
+			'widgets_created'  => $widgets_count,
 		);
 	}
 
@@ -602,12 +644,13 @@ class MindCrafts_AI_Composite_Abilities {
 	 * NOTE: Input uses "children" key; Elementor stores children under "elements".
 	 * This is intentional — the input API uses "children" for clarity.
 	 *
-	 * @param array $items    The declarative structure items.
-	 * @param bool  $is_inner Whether these are nested (inner) containers.
-	 * @param int   $counter  Pass-by-reference counter for total elements created.
+	 * @param array $items          The declarative structure items.
+	 * @param bool  $is_inner       Whether these are nested (inner) containers.
+	 * @param int   $counter        Pass-by-reference counter for total elements created.
+	 * @param int   $widget_counter Pass-by-reference counter for total content widgets created.
 	 * @return array|\WP_Error The Elementor element tree.
 	 */
-	private function build_elements( array $items, bool $is_inner = false, int &$counter = 0 ) {
+	private function build_elements( array $items, bool $is_inner = false, int &$counter = 0, int &$widget_counter = 0 ) {
 		$elements = array();
 
 		foreach ( $items as $item ) {
@@ -618,7 +661,7 @@ class MindCrafts_AI_Composite_Abilities {
 				$children = $item['children'] ?? array();
 
 				// Recursively build children.
-				$child_elements = $this->build_elements( $children, true, $counter );
+				$child_elements = $this->build_elements( $children, true, $counter, $widget_counter );
 				if ( is_wp_error( $child_elements ) ) {
 					return $child_elements;
 				}
@@ -650,6 +693,7 @@ class MindCrafts_AI_Composite_Abilities {
 							foreach ( $decomposed as $decomposed_elem ) {
 								$elements[] = $decomposed_elem;
 								++$counter;
+								$widget_counter += self::count_widgets_recursive( $decomposed_elem );
 							}
 							continue;
 						} else {
@@ -675,6 +719,7 @@ class MindCrafts_AI_Composite_Abilities {
 
 				$widget = $this->factory->create_widget( $widget_type, $settings );
 				++$counter;
+				++$widget_counter;
 				$elements[] = $widget;
 			} else {
 				return new \WP_Error( 'invalid_element_type', __( 'Each structure item must have type "container" or "widget".', 'mindcrafts-ai' ) );
@@ -682,5 +727,24 @@ class MindCrafts_AI_Composite_Abilities {
 		}
 
 		return $elements;
+	}
+
+	/**
+	 * Counts widgets inside an element structure recursively.
+	 *
+	 * @param array $element Element array.
+	 * @return int Number of widgets.
+	 */
+	private static function count_widgets_recursive( array $element ): int {
+		$count = 0;
+		if ( isset( $element['elType'] ) && 'widget' === $element['elType'] ) {
+			++$count;
+		}
+		if ( ! empty( $element['elements'] ) && is_array( $element['elements'] ) ) {
+			foreach ( $element['elements'] as $child ) {
+				$count += self::count_widgets_recursive( $child );
+			}
+		}
+		return $count;
 	}
 }
