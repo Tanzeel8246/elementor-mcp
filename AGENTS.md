@@ -279,7 +279,7 @@ npx @modelcontextprotocol/inspector wp mcp-adapter serve --server=mindcrafts-ai-
 
 ## Version Control & Release Policy (Strict Mandate)
 
-**Current Version:** `3.1.6`
+**Current Version:** `3.1.7`
 
 Whenever **ANY** modification, bug fix, feature addition, or architectural refactor is made to this codebase, the agent or developer **MUST ALWAYS** increment the version number and synchronize all version references. Never leave the version unchanged after modifying code.
 

@@ -1,5 +1,13 @@
 # MindCrafts AI for Elementor — Changelog
 
+## [3.1.7] - 2026-09-30
+### Added
+- **Anti-Wipe Safety Armor on `delete-page-content`:** Protected existing live pages from destructive wiping by requiring explicit `confirm_wipe: true`. Rejects blind AI deletion requests on pages that currently contain content.
+- **In-Place Page Rebuild (`build-page` `post_id` parameter):** Added direct `post_id` support to `mindcrafts-ai/build-page`. AI agents can now rebuild or update existing pages directly in place with auto-snapshots, eliminating the dangerous habit of clearing pages before rebuilding.
+- **Empty-Container Skeleton Rejection Guardrail:** Enforced strict validation preventing AI agents from creating pages with empty container skeletons or zero content widgets. Pages must contain actual content widgets (headings, text, buttons, images).
+- **Deep HTML Decomposer Content Retention:** Added deep parsing for `span`, `label`, `small`, `strong`, `b`, `em`, `ul`, `ol`, `li`, `blockquote`, and text divs in `MindCrafts_AI_Html_Decomposer`. Ensures zero text or design elements are dropped during conversion.
+- **Emergency Disaster Recovery & Snapshot Restore UI:** Added recovery instructions and AJAX snapshot restoration handlers in the WordPress Admin dashboard (`MindCrafts AI > Setup`).
+
 ## [3.1.6] - 2026-09-27
 ### Fixed
 - **Query Abilities Element Lookup:** Fixed fatal call to undefined method `$this->data->find_element()` in `MindCrafts_AI_Query_Abilities::execute_get_element_settings()`. Corrected invocation to `$this->data->find_element_by_id( $data, $element_id )` to resolve runtime failure when retrieving element settings by ID.

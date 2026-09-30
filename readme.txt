@@ -4,7 +4,7 @@ Tags: elementor, ai, mcp, claude, cursor
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 3.1.6
+Stable tag: 3.1.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,16 @@ Yes. MindCrafts AI can inspect registered Elementor widgets and includes conveni
 * سمارٹ ایچ ٹی ایم ایل ڈیکمپوزر (MindCrafts_AI_Html_Decomposer) شامل: خام HTML کوڈ کو خودکار طور پر ایلیمینٹور کے حقیقی کنٹینرز، ہیڈنگز، بٹنز، اور امیج وجٹس میں تقسیم کرتا ہے۔
 * نیا ٹول شامل: mindcrafts-ai/convert-html-to-elementor — کسی بھی ایچ ٹی ایم ایل لے آؤٹ کو فوری ویژول ایلیمینٹور کمپونینٹس میں تبدیل کرنے کے لیے۔
 * سسٹم پرامپٹس اپڈیٹ: ایلیمینٹور کے ویژول ڈیزائنرز کے لیے نیٹو وجٹس کی لازمی ہدایات شامل کی گئیں۔
+
+= 3.1.7 =
+* اینٹی وائپ سیفٹی آرمر: delete-page-content کو اتفاقیہ پیج خالی کرنے سے روکنے کے لیے confirm_wipe تصدیق کا اضافہ۔
+* زیرو کونٹینٹ اسکیلیٹن ریجیکشن: build-page میں خالی کنٹینرز اور بغیر مواد والی وائر فریمز پر سخت پابندی۔
+* ڈیپ HTML ڈیکومپوزر: span، list، quote، اور div کے حقیقی متنی مواد کو بغیر کسی نقصان کے 100% محفوظ کر کے وزٹس میں ڈھالنے کا نظام۔
+* ان-پلیس پیج ری بلڈ: build-page میں براہ راست post_id سپورٹ، پیج کو پہلے مٹائے بغیر مکمل نیٹو ری کنسٹرکشن۔
+* ورڈپریس ایڈمن میں ایمرجنسی ریکوری گائیڈ اور اسنیپ شاٹ ریسٹوریشن پینل کا اضافہ۔
+
+= 3.1.6 =
+* Query abilities bugfix: find_element corrected to find_element_by_id in class-query-abilities.php.
 
 = 3.1.3 =
 * ورژن کنٹرول سسٹم شامل — تمام تبدیلیاں CHANGELOG.md میں محفوظ ہوتی ہیں۔
